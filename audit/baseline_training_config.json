@@ -1,0 +1,321 @@
+{
+  "profile": "repo-panorama",
+  "paper_lr_schedule": null,
+  "paper_mask_reduction": null,
+  "geometry_backend": "upstream",
+  "lr_schedule": "repo-step",
+  "vae_dtype": "float32",
+  "max_grad_norm": null,
+  "drop_last": true,
+  "model": "Qwen/Qwen-Image-2512",
+  "revision": null,
+  "local_files_only": false,
+  "panorama_manifest": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/data/cached_official_full/train.jsonl",
+  "perspective_manifest": null,
+  "heldout_manifest": "/data-nfs/gpu1-2/u13529658780/DIT360/benchmark_assets/mp3d_stitched1092/prompts.jsonl",
+  "allow_unverified_split": false,
+  "official_full_training_only": true,
+  "text_cache": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/cache/text_2512_official_full",
+  "init_lora": null,
+  "height": 1024,
+  "epochs": 25,
+  "batch_size": 1,
+  "accumulation_steps": 4,
+  "workers": 25,
+  "learning_rate": 5e-05,
+  "warmup_steps": null,
+  "rank": 64,
+  "lora_alpha": 64,
+  "lora_dropout": 0.05,
+  "padding_columns": 1,
+  "lambda_cube": 0.5,
+  "lambda_yaw": 0.5,
+  "lambda_seam": 0.0,
+  "perspective_weight": 0.5,
+  "schedule": "panorama",
+  "geometry_start_epoch": 2,
+  "augment": true,
+  "weighting_scheme": "none",
+  "logit_mean": 0.0,
+  "logit_std": 1.0,
+  "mode_scale": 1.29,
+  "seed": 0,
+  "vae_tiling": false,
+  "log_every": 10,
+  "mask_reduction": "valid",
+  "upstream_commit": "3779fe7965473f6824994c663a0ae7a76bc7aafa",
+  "base_snapshot": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/hub/models--Qwen--Qwen-Image-2512/snapshots/25468b98e3276ca6700de15c6628e51b7de54a26",
+  "width": 2048,
+  "versions": {
+    "torch": "2.6.0",
+    "diffusers": "0.37.0",
+    "transformers": "4.52.4",
+    "accelerate": "1.14.0",
+    "peft": "0.20.0",
+    "safetensors": "0.8.0"
+  },
+  "world_size": 1,
+  "source_hashes": {
+    "__init__.py": "d61a5d7f1617b5cb2999ea65d333f2a932eccf356952f84ba5a37d4663e841c6",
+    "audit_static.py": "8d0b354603f07fff48469d4a02f1ddff4d46f7f52c38fe3a035b193b48612caf",
+    "cache_text.py": "2bf498a5b6d11e476a55968560c1efdf34a2fc38a8f1b00305e177e14e9c064d",
+    "cached_data.py": "4b9423eeda92d8623d8e658a732b6ebfc0cc6195ebf8df24be1b120bc3f99d54",
+    "circular.py": "f80697058ff241006accca068d87a75d82d48167276ade6139b18248aebb8c7f",
+    "common.py": "27aaf275855e706a390a93dd3c2182280e14be99fd7c08d57c5eb1c81df03b91",
+    "data.py": "6445d8f4942d68e95ec5170f66dd35bca4307a88089fec67172b124c54c440aa",
+    "diagnostics.py": "9d6212a704d03e59d2802ee384a535e00ee2b2830b34325542e261e24199f655",
+    "geometry.py": "ee51b0d62b52d5cfe6cca732a924ba669ad071b53bb03038408e034d49a05e0f",
+    "inference.py": "f1b5933a4212f33bedfb21890cff36609f08b67a1e7405e3e33562d68826c384",
+    "losses.py": "51238b6b9f69adddb7a9ad026795ff133fa71bce09cced0ac77b60d2db256282",
+    "pipeline.py": "dedd5d325459d54bd93871dce5c48d138aace7ffedd8b35631d7b1398083eba2",
+    "prepare_data.py": "7790eefaf1ec973c7141bec153dae37c54e36819a4e771d609948f7e21c801f1",
+    "profiles.py": "39fe10fbaa166d8f30a22b8373f6fee99ec07ceb02e82848a5ec4d4bab0692a0",
+    "resume_compat.py": "04383d681488909fd994a2ee764594029df47b5bf4e1847febaa35486e11bb49",
+    "train.py": "90edfb26f4e46794a8fee592039d48c408621dca342c2e9adb742e880f16fc06",
+    "upstream_sources.json": "d03350f1c1a3741ea6c3245cf9fc142b4db48f299624d508efa2e9dcec9bb7e1",
+    "vendor/dit360/__init__.py": "1821b975073d96bd78d3eb89144da6d19575e82f8af2e328fe8b59859da41872",
+    "vendor/dit360/cube_map.py": "1e4df731d96c73c3d33dd4148133b14e56223a32a2ce9bbaa527f2232c263789",
+    "vendor/dit360/yaw_rotate.py": "ad88c70af7ea03da104d510776e97ff30a6e4100c4e6c54b9fdbc2fc8a4cac3a"
+  },
+  "panorama_sha256": "388338cf28b574b3bb418fdcd26ee67d05aea2ccaf04156fb7a6973e8763c0d1",
+  "perspective_sha256": null,
+  "heldout_sha256": "d80bd764738f9e5966058800d2c89bc7ad85de1e8c0878d941bac908bdbf268c",
+  "text_cache_config_sha256": "f011f873ba5bc83d52ace84434e447aa7f362b355105f576ab4be6c70f2015df",
+  "computed_warmup_steps": 3237,
+  "allow_missing_house_identity": true,
+  "actual_panorama_count": 10359,
+  "actual_perspective_count": 0,
+  "paper_perspective_count_matches_40000": false,
+  "global_effective_batch": 4,
+  "data_backend": "huggingface_load_dataset",
+  "persistent_workers": true,
+  "init_lora_sha256": null,
+  "split_status": "official_full_training_only_no_independent_test_claim",
+  "dataset_index_provenance": {
+    "dataset": "Insta360-Research/Matterport3D_polished",
+    "dataset_revision": "2bf913e40da2f34c0efb163015f9ef7fe8dcff5d",
+    "source_rows": 10359,
+    "training_rows": 10359,
+    "excluded_rows": 0,
+    "source_benchmark_uuid_overlap": 1077,
+    "split_policy": "official-full",
+    "arrow_files": [
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00000-of-00042.arrow",
+        "size_bytes": 764484904,
+        "mtime_ns": 1788500755305451838
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00001-of-00042.arrow",
+        "size_bytes": 709697176,
+        "mtime_ns": 1788500773431246931
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00002-of-00042.arrow",
+        "size_bytes": 768939848,
+        "mtime_ns": 1788500784911750028
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00003-of-00042.arrow",
+        "size_bytes": 721515432,
+        "mtime_ns": 1788500801249465328
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00004-of-00042.arrow",
+        "size_bytes": 771462528,
+        "mtime_ns": 1788500813188987597
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00005-of-00042.arrow",
+        "size_bytes": 710730040,
+        "mtime_ns": 1788500829925719064
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00006-of-00042.arrow",
+        "size_bytes": 778062608,
+        "mtime_ns": 1788500842510268577
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00007-of-00042.arrow",
+        "size_bytes": 505227272,
+        "mtime_ns": 1788500852269694451
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00008-of-00042.arrow",
+        "size_bytes": 712012536,
+        "mtime_ns": 1788500868778414303
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00009-of-00042.arrow",
+        "size_bytes": 761479184,
+        "mtime_ns": 1788500881518969394
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00010-of-00042.arrow",
+        "size_bytes": 709381120,
+        "mtime_ns": 1788500898224696662
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00011-of-00042.arrow",
+        "size_bytes": 763801088,
+        "mtime_ns": 1788500910689238876
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00012-of-00042.arrow",
+        "size_bytes": 507054872,
+        "mtime_ns": 1788500920561668086
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00013-of-00042.arrow",
+        "size_bytes": 723696352,
+        "mtime_ns": 1788500937424400710
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00014-of-00042.arrow",
+        "size_bytes": 508127712,
+        "mtime_ns": 1788500947129822101
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00015-of-00042.arrow",
+        "size_bytes": 504678280,
+        "mtime_ns": 1788500957548274231
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00016-of-00042.arrow",
+        "size_bytes": 757374792,
+        "mtime_ns": 1788500970665843182
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00017-of-00042.arrow",
+        "size_bytes": 511979552,
+        "mtime_ns": 1788500980675277091
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00018-of-00042.arrow",
+        "size_bytes": 715629552,
+        "mtime_ns": 1788500996870978765
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00019-of-00042.arrow",
+        "size_bytes": 500551632,
+        "mtime_ns": 1788501006234384204
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00020-of-00042.arrow",
+        "size_bytes": 763243248,
+        "mtime_ns": 1788501019698852523
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00021-of-00042.arrow",
+        "size_bytes": 503005224,
+        "mtime_ns": 1788501029465640975
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00022-of-00042.arrow",
+        "size_bytes": 709709392,
+        "mtime_ns": 1788501046711292936
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00023-of-00042.arrow",
+        "size_bytes": 752013024,
+        "mtime_ns": 1788501059080062860
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00024-of-00042.arrow",
+        "size_bytes": 721372872,
+        "mtime_ns": 1788501076035773207
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00025-of-00042.arrow",
+        "size_bytes": 507677656,
+        "mtime_ns": 1788501086222613143
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00026-of-00042.arrow",
+        "size_bytes": 769938504,
+        "mtime_ns": 1788501099303422559
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00027-of-00042.arrow",
+        "size_bytes": 714286736,
+        "mtime_ns": 1788501115920204077
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00028-of-00042.arrow",
+        "size_bytes": 769541920,
+        "mtime_ns": 1788501128439056481
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00029-of-00042.arrow",
+        "size_bytes": 729006576,
+        "mtime_ns": 1788501145226880782
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00030-of-00042.arrow",
+        "size_bytes": 767310912,
+        "mtime_ns": 1788501157871764815
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00031-of-00042.arrow",
+        "size_bytes": 500897208,
+        "mtime_ns": 1788501167506685667
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00032-of-00042.arrow",
+        "size_bytes": 713996920,
+        "mtime_ns": 1788501183287572800
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00033-of-00042.arrow",
+        "size_bytes": 757826648,
+        "mtime_ns": 1788501195015502088
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00034-of-00042.arrow",
+        "size_bytes": 713647152,
+        "mtime_ns": 1788501211611420695
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00035-of-00042.arrow",
+        "size_bytes": 747027072,
+        "mtime_ns": 1788501224212373099
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00036-of-00042.arrow",
+        "size_bytes": 719117880,
+        "mtime_ns": 1788501240886328424
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00037-of-00042.arrow",
+        "size_bytes": 500916704,
+        "mtime_ns": 1788501250971311263
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00038-of-00042.arrow",
+        "size_bytes": 752110296,
+        "mtime_ns": 1788501263312300134
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00039-of-00042.arrow",
+        "size_bytes": 705967432,
+        "mtime_ns": 1788501280088301955
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00040-of-00042.arrow",
+        "size_bytes": 762948864,
+        "mtime_ns": 1788501292616315731
+      },
+      {
+        "arrow_file": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00041-of-00042.arrow",
+        "size_bytes": 222963128,
+        "mtime_ns": 1788501295336320093
+      }
+    ],
+    "dataset_info_sha256": "45b95df9f6b62bfdf84855d616a55114622b156911032910beabe230c3db67be",
+    "heldout_sha256": "d80bd764738f9e5966058800d2c89bc7ad85de1e8c0878d941bac908bdbf268c",
+    "house_map_sha256": "90ddda5efd2c5e550e98d1048dc0588a81df8190d27175546e941a8992de496c",
+    "image_exported": false,
+    "note": "Original image bytes stay in existing Arrow cache.",
+    "manifest_sha256": "388338cf28b574b3bb418fdcd26ee67d05aea2ccaf04156fb7a6973e8763c0d1"
+  }
+}

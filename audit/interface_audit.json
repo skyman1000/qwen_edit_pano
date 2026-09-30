@@ -1,0 +1,18 @@
+{
+  "diffusers": "0.37.0",
+  "installed_source_root": "/data-nfs/gpu1-2/u13529658780/.conda/envs/qwen360/lib/python3.12/site-packages/diffusers",
+  "source_sha256": {
+    "pipelines/qwenimage/pipeline_qwenimage.py": "497e33ef87acd319ac6a89e5a6112b30010a83e4d8da115c2acac4f22b1cdd24",
+    "pipelines/qwenimage/pipeline_qwenimage_edit_plus.py": "9ff51e3411cf0ca2b088da4622693c1b1cc0d691b5229727c68ef26df50d5629",
+    "models/transformers/transformer_qwenimage.py": "2f147aac59f7f62eb70668be3961fa367fbb815b8def25f58a2f4709f7f37e35"
+  },
+  "official_dit360_commit": "3779fe7965473f6824994c663a0ae7a76bc7aafa",
+  "official_files_byte_equal_to_local": [
+    "train.py",
+    "train.sh",
+    "src/dit360.py",
+    "src/data.py"
+  ],
+  "gpu_validation": "not run; user executes scripts/smoke_test.sh",
+  "scheduler_config_equal_to_baseline": true
+}

@@ -1,0 +1,20 @@
+{
+  "base_snapshot": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/hub/models--Qwen--Qwen-Image-2512/snapshots/25468b98e3276ca6700de15c6628e51b7de54a26",
+  "padding_columns": 1,
+  "rank": 64,
+  "lora_alpha": 64,
+  "height": 1024,
+  "width": 2048,
+  "max_sequence_length": 512,
+  "targets": [
+    "attn.to_q",
+    "attn.to_k",
+    "attn.to_v",
+    "attn.to_out.0"
+  ],
+  "geometry": "upstream",
+  "profile": "repo-panorama",
+  "inference_padding_columns": 1,
+  "inference_padding_mode": "persistent",
+  "schema_version": 2
+}
