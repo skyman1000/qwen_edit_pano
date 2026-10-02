@@ -1,0 +1,35 @@
+{
+  "status": "CPU_CHECKS_PASSED_GPU_NOT_RUN",
+  "syntax_checked": [
+    "paired_data",
+    "prepare_pairs",
+    "pair_alignment",
+    "paired_circular",
+    "paired_pipeline",
+    "cache_paired",
+    "paired_train",
+    "paired_inference",
+    "test_paired_interface"
+  ],
+  "checks": [
+    "actual_diffusers_tiny_transformer_reference_rope",
+    "temporary_persistent_padding_equivalence",
+    "reference_changes_target_prediction",
+    "gradient_checkpointing_and_lora_gradients",
+    "frozen_base_and_lora_optimizer_update",
+    "adapter_safetensors_roundtrip",
+    "cube_yaw_loss_branches",
+    "actual_arrow_zip_and_target_orientation",
+    "deterministic_dataset_epoch_flip",
+    "confirmed_recipe_parser"
+  ],
+  "real_model_loaded": false,
+  "gpu_training_run": false,
+  "gpu_inference_run": false,
+  "alignment_sample_count": 10,
+  "alignment_score_range": [
+    0.975,
+    0.993
+  ],
+  "alignment_note": "All sampled transforms were no mirror, roll_fraction 0.75. Not a full dataset guarantee."
+}

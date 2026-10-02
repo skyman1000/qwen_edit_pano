@@ -97,7 +97,7 @@ conda activate qwen360
 mkdir -p qwen_edit_pano/outputs qwen_edit_pano/cache
 
 # 在可联网的节点执行；仅下载模型，不运行训练。
-# 默认保存到 qwen_edit_pano/cache/hub，与旧缓存隔离。
+# 使用 Hugging Face 已配置的默认模型缓存（HF_HUB_CACHE / HF_HOME），不下载到项目内。
 HF_HUB_OFFLINE=0 TRANSFORMERS_OFFLINE=0 python -c 'from qwen_edit_pano.common import model_snapshot, DEFAULT_MODEL; print(model_snapshot(DEFAULT_MODEL))'
 
 python -m qwen_edit_pano.audit_static

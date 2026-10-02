@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "train_rows": 7521,
+  "val_rows": 925,
+  "train_houses": 61,
+  "val_houses": 11,
+  "heldout_rows": 2836,
+  "cache_files": 15042,
+  "cache_bytes": 32801412510,
+  "all_cache_tensors_finite": true,
+  "cache_shapes_dtypes_checked": true,
+  "cache_versions_and_sources_match": true,
+  "split_identity_disjoint": true,
+  "arrow_files_stat_checked": 42,
+  "buildings_with_pair_decode_checked": 72,
+  "manifest_sha256": "c47e91c9d6eb5cc07aa538d61bf6e566fa4f289f01512413f31032442665b7c3",
+  "cache_config_sha256": "1f08a64efd9f065a90b6f89b0f21929d33ea81e585446cb5bdd1d16ce5807717",
+  "embedding_lengths": {
+    "231": 15042
+  },
+  "rejected_rows": 2,
+  "visual_geometry_approval": "not_inferred",
+  "gpu_training": "not_run"
+}

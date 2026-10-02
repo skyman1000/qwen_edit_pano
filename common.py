@@ -95,8 +95,9 @@ def model_snapshot(model, revision=None, local_files_only=False):
         snapshot = str(Path(model).resolve())
     else:
         from huggingface_hub import snapshot_download
-        snapshot = snapshot_download(model, revision=revision, local_files_only=local_files_only,
-                                     cache_dir=ROOT / "qwen_edit_pano/cache/hub")
+        # Respect Hugging Face's configured cache (HF_HUB_CACHE / HF_HOME),
+        # matching the original Qwen-Pano model download behavior.
+        snapshot = snapshot_download(model, revision=revision, local_files_only=local_files_only)
     index = json.loads((Path(snapshot) / "model_index.json").read_text())
     if index.get("_class_name") != "QwenImageEditPlusPipeline":
         raise ValueError("Expected the official QwenImageEditPlusPipeline Edit-2511 snapshot")
