@@ -1,0 +1,312 @@
+{
+  "date": "2026-10-06 Asia/Shanghai",
+  "scope": "Project recursive scan; user non-cache directories; HF dataset repository names and active manifests. No scan of all cluster disks.",
+  "archives": {
+    "matterport_skybox_images": {
+      "houses": [
+        "17DRP5sb8fy",
+        "1LXtFkjw3qL",
+        "1pXnuDYAj8r",
+        "29hnd4uzFmX",
+        "2azQ1b91cZZ",
+        "2n8kARJN3HM",
+        "2t7WUuJeko7",
+        "5LpN3gDmAk7",
+        "5ZKStnWn8Zo",
+        "5q7pvUzZiYa",
+        "759xd9YjKW5",
+        "7y3sRwLe3Va",
+        "8194nk5LbLH",
+        "82sE5b5pLXE",
+        "8WUmhLawc2A",
+        "ARNzJeq3xxb",
+        "B6ByNegPMKs",
+        "D7G3Y4RVNrH",
+        "D7N2EKCX4Sj",
+        "E9uDoFAP3SH",
+        "EDJbREhghzL",
+        "EU6Fwq7SyZv",
+        "GdvgFV5R1Z5",
+        "HxpKQynjfin",
+        "JF19kD82Mey",
+        "JeFG25nYj2p",
+        "JmbYfDe2QKZ",
+        "PX4nDJXEHrG",
+        "Pm6F8kyY3z2",
+        "PuKPg4mmafe",
+        "QUCTc6BB5sX",
+        "RPmz2sHmrrY",
+        "S9hNv5qa7GM",
+        "SN83YJsR3w2",
+        "TbHJrupSAjP",
+        "ULsKaCPVFJR",
+        "UwV83HsGsw3",
+        "Uxmj2M2itWa",
+        "V2XKFyX4ASd",
+        "VFuaQ6m2Qom",
+        "VLzqgDo317F",
+        "VVfe2KiqLaN",
+        "Vt2qJdWjCF2",
+        "Vvot9Ly1tCj",
+        "VzqfbhrpDEA",
+        "WYY7iVyf5p8",
+        "X7HyMhZNoso",
+        "XcA2TqTSSAj",
+        "YFuZgdQ5vWj",
+        "YVUC4YcDtcY",
+        "YmJkqBEsHnH",
+        "Z6MFQCViBuw",
+        "ZMojNkEp431",
+        "aayBHfsNo7d",
+        "ac26ZMwG7aT",
+        "b8cTxDM8gDG",
+        "cV4RVeZvu5T",
+        "dhjEzFoUFzH",
+        "e9zR4mvMWw7",
+        "fzynW3qQPVF",
+        "gTV8FGcVJC9",
+        "gYvKGZ5eRqb",
+        "gZ6f7yhEvPG",
+        "gxdoqLR6rwA",
+        "i5noydFURQK",
+        "jh4fc5c5qoQ",
+        "jtcxE69GiFV",
+        "kEZ7cmS4wCh",
+        "mJXqzFtmKg4",
+        "oLBMNvg9in8",
+        "p5wJjkQkbXX",
+        "pLe4wQe7qrG",
+        "pRbA3pwrgk9",
+        "pa4otMbVnkk",
+        "q9vSo1VnCiC",
+        "qoiz87JEwZ2",
+        "r1Q1Z4BcV1o",
+        "r47D5H71a5s",
+        "rPc6DW4iMge",
+        "rqfALeAoiTq",
+        "s8pcmisQ38h",
+        "sKLMLpTHeUy",
+        "sT4fr6TAbpF",
+        "uNb9QFRL6hY",
+        "ur6pFq6Qu1A",
+        "vyrNrziPKCB",
+        "wc2JMjhGNzB",
+        "x8F5xyUWy9e",
+        "yqstnuAEVhm",
+        "zsNo4HB9uLZ"
+      ],
+      "bytes": 18549602309,
+      "zip_directory_readable": 90
+    },
+    "house_segmentations": {
+      "houses": [
+        "5q7pvUzZiYa",
+        "ULsKaCPVFJR",
+        "Vt2qJdWjCF2",
+        "e9zR4mvMWw7",
+        "qoiz87JEwZ2",
+        "sT4fr6TAbpF",
+        "x8F5xyUWy9e"
+      ],
+      "bytes": 1037226682,
+      "zip_directory_readable": 7
+    },
+    "matterport_camera_intrinsics": {
+      "houses": [
+        "5q7pvUzZiYa",
+        "ULsKaCPVFJR",
+        "Vt2qJdWjCF2",
+        "e9zR4mvMWw7",
+        "qoiz87JEwZ2",
+        "sT4fr6TAbpF",
+        "x8F5xyUWy9e"
+      ],
+      "bytes": 719731,
+      "zip_directory_readable": 7
+    },
+    "matterport_camera_poses": {
+      "houses": [
+        "5q7pvUzZiYa",
+        "ULsKaCPVFJR",
+        "Vt2qJdWjCF2",
+        "e9zR4mvMWw7",
+        "qoiz87JEwZ2",
+        "sT4fr6TAbpF",
+        "x8F5xyUWy9e"
+      ],
+      "bytes": 4265004,
+      "zip_directory_readable": 7
+    },
+    "region_segmentations": {
+      "houses": [
+        "5q7pvUzZiYa",
+        "ULsKaCPVFJR",
+        "Vt2qJdWjCF2",
+        "e9zR4mvMWw7",
+        "qoiz87JEwZ2",
+        "sT4fr6TAbpF",
+        "x8F5xyUWy9e"
+      ],
+      "bytes": 1041256877,
+      "zip_directory_readable": 7
+    },
+    "undistorted_camera_parameters": {
+      "houses": [
+        "5q7pvUzZiYa",
+        "ULsKaCPVFJR",
+        "Vt2qJdWjCF2",
+        "e9zR4mvMWw7",
+        "qoiz87JEwZ2",
+        "sT4fr6TAbpF",
+        "x8F5xyUWy9e"
+      ],
+      "bytes": 656593,
+      "zip_directory_readable": 7
+    },
+    "undistorted_color_images": {
+      "houses": [
+        "5q7pvUzZiYa",
+        "ULsKaCPVFJR",
+        "Vt2qJdWjCF2",
+        "e9zR4mvMWw7",
+        "qoiz87JEwZ2",
+        "sT4fr6TAbpF",
+        "x8F5xyUWy9e"
+      ],
+      "bytes": 1182029898,
+      "zip_directory_readable": 7
+    },
+    "undistorted_depth_images": {
+      "houses": [
+        "5q7pvUzZiYa",
+        "ULsKaCPVFJR",
+        "Vt2qJdWjCF2",
+        "e9zR4mvMWw7",
+        "qoiz87JEwZ2",
+        "sT4fr6TAbpF",
+        "x8F5xyUWy9e"
+      ],
+      "bytes": 8042892044,
+      "zip_directory_readable": 7
+    },
+    "undistorted_normal_images": {
+      "houses": [
+        "5q7pvUzZiYa",
+        "ULsKaCPVFJR",
+        "Vt2qJdWjCF2",
+        "e9zR4mvMWw7",
+        "qoiz87JEwZ2",
+        "sT4fr6TAbpF",
+        "x8F5xyUWy9e"
+      ],
+      "bytes": 18309960827,
+      "zip_directory_readable": 7
+    }
+  },
+  "bad_zip_directories": [],
+  "raw_gt_houses": [
+    "5q7pvUzZiYa",
+    "ULsKaCPVFJR",
+    "Vt2qJdWjCF2",
+    "e9zR4mvMWw7",
+    "qoiz87JEwZ2",
+    "sT4fr6TAbpF",
+    "x8F5xyUWy9e"
+  ],
+  "paired": {
+    "train": {
+      "pairs": 7521,
+      "houses": 61,
+      "raw_gt_archive_covered_pairs": 470,
+      "existing_world_matches": 251,
+      "matched_houses": {
+        "e9zR4mvMWw7": 46,
+        "qoiz87JEwZ2": 48,
+        "sT4fr6TAbpF": 67,
+        "ULsKaCPVFJR": 45,
+        "5q7pvUzZiYa": 45
+      }
+    },
+    "val": {
+      "pairs": 925,
+      "houses": 11,
+      "raw_gt_archive_covered_pairs": 42,
+      "existing_world_matches": 39,
+      "matched_houses": {
+        "x8F5xyUWy9e": 39
+      }
+    }
+  },
+  "arrow_files": [
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00000-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00001-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00002-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00003-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00004-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00005-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00006-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00007-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00008-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00009-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00010-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00011-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00012-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00013-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00014-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00015-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00016-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00017-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00018-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00019-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00020-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00021-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00022-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00023-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00024-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00025-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00026-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00027-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00028-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00029-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00030-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00031-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00032-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00033-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00034-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00035-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00036-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00037-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00038-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00039-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00040-of-00042.arrow",
+    "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/datasets/Insta360-Research___matterport3_d_polished/default/0.0.0/2bf913e40da2f34c0efb163015f9ef7fe8dcff5d/matterport3_d_polished-train-00041-of-00042.arrow"
+  ],
+  "arrow_bytes": 28210411848,
+  "legacy_world_total": 315,
+  "expanded_rows": 31,
+  "expanded_complete": false,
+  "active_job": {
+    "id": 64452,
+    "node": "GPU4",
+    "state": "RUNNING",
+    "output": "qwen_edit_pano/outputs/paired_full_63637",
+    "current_epoch_1based": 7,
+    "last_complete_epoch": 6
+  },
+  "available_bytes": 8103395328,
+  "migration": {
+    "canonical": "qwen_edit_pano/world_pipeline",
+    "compatibility_symlink": "research/world_pipeline",
+    "numerical_schema_changed": false
+  },
+  "raw_search_outside_project": {
+    "named_house_region_camera_archives_found": 0,
+    "user_non_cache_walk_errors": 0
+  },
+  "not_performed": [
+    "delete",
+    "download",
+    "GPU workload",
+    "all ZIP CRC verification"
+  ]
+}

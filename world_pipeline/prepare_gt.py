@@ -264,20 +264,34 @@ def validate_resume(output, contract, selected):
             raise ValueError(f'Resume configuration changed: {key}; use a new output')
     # Only orchestration changed in the supported legacy migration. Numerical
     # geometry/registration/representation and source data must remain identical.
-    allowed_old = 'c077b8b6eb13233b72357960521685c926fce8da9c2ec6bab6a9b74c936c3a74'
+    allowed_old = {
+        'c077b8b6eb13233b72357960521685c926fce8da9c2ec6bab6a9b74c936c3a74',
+        # Before the package relocation fix; numerical export is unchanged.
+        'c7208df32165f94df039bd58acf9b3d5e7d0fcf219f542bcad1957b89f536bdb',
+    }
     core = {str(Path(__file__).resolve()), str(Path(__file__).with_name('geometry.py').resolve()),
             str(Path(__file__).with_name('common.py').resolve())}
     for name, expected in old['source_sha256'].items():
         path = Path(name)
-        if name in core or not path.is_relative_to(Path(__file__).parent):
-            if sha(path) != expected and not (path.resolve() == Path(__file__).resolve() and expected == allowed_old):
+        resolved = path.resolve()
+        if str(resolved) in core or not resolved.is_relative_to(Path(__file__).resolve().parent):
+            if sha(path) != expected and not (resolved == Path(__file__).resolve() and expected in allowed_old):
                 raise ValueError(f'Resume source changed: {path}')
     signature = dict(world_root=str(OLD.resolve()), ids=[r['id'] for r in selected],
                      implementation={str(Path(__file__).resolve()): sha(Path(__file__)),
                                      str(Path(__file__).with_name('checkpoint_io.py').resolve()): sha(Path(__file__).with_name('checkpoint_io.py'))})
     marker = output/'resume_contract.json'
-    if marker.exists() and read(marker) != signature:
-        raise ValueError('Resume root/selection/code changed; use a new export')
+    if marker.exists():
+        previous = read(marker)
+        normalized = dict(previous, implementation={str(Path(k).resolve()): v
+                                                    for k, v in previous['implementation'].items()})
+        for name, digest in list(normalized['implementation'].items()):
+            if name == str(Path(__file__).resolve()) and digest in allowed_old:
+                normalized['implementation'][name] = sha(Path(__file__))
+        if normalized != signature:
+            raise ValueError('Resume root/selection/code changed; use a new export')
+        if previous != signature and not (output/'resume_contract.before_relocation.json').exists():
+            atomic_json(output/'resume_contract.before_relocation.json', previous)
     # The legacy root is recoverable from provenance even before resume metadata.
     selected_ids = {r['id'] for r in selected}
     for prov in (output/'samples').glob('*/provenance.json'):

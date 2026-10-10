@@ -22,7 +22,7 @@ export PYTHON_BIN=/data-nfs/gpu1-2/u13529658780/.conda/envs/qwen360/bin/python
 export OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2
 srun -p debug --nodes=1 --ntasks=1 --cpus-per-task=4 \
   --mem=48G --qos=normal --time=04:00:00 \
-  "$PYTHON_BIN" -u -m research.world_pipeline.prepare_gt \
+  "$PYTHON_BIN" -u -m qwen_edit_pano.world_pipeline.prepare_gt \
   --pairs qwen_edit_pano/data/paired_full_v1 \
   --train-limit 0 --val-limit 0 --threads 4 \
   --output qwen_edit_pano/data/gt_world_expanded_v1

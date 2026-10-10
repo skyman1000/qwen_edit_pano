@@ -1,6 +1,6 @@
 **GT小样本准备与Qwen3-VL Observer Pass A：用户手动执行**
 
-本实现与正在运行的Edit训练隔离，代码仅在 `research/world_pipeline/`。
+本实现与正在运行的Edit训练隔离，代码仅在 `qwen_edit_pano/world_pipeline/`。
 不修改 `qwen_pano`、`qwen_edit_pano` 顶层训练Python文件、旧manifest/cache/outputs，也不启动训练。
 GT和Observer输出都是实验数据，不被当前训练入口读取。
 
@@ -18,7 +18,7 @@ export OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2
 
 srun -p debug --nodelist=GPU0 --nodes=1 --ntasks=1 \
   --cpus-per-task=2 --mem=8G --qos=normal --time=00:10:00 \
-  "$PYTHON_BIN" -m research.world_pipeline.prepare_gt --preflight
+  "$PYTHON_BIN" -m qwen_edit_pano.world_pipeline.prepare_gt --preflight
 ```
 
 本轮已检查到默认 `paired_pilot_v1` 中有9条train、2条val已有世界状态。预检不会构建mesh、写数据或加载模型。
@@ -28,7 +28,7 @@ srun -p debug --nodelist=GPU0 --nodes=1 --ntasks=1 \
 ```bash
 srun -p debug --nodelist=GPU0 --nodes=1 --ntasks=1 \
   --cpus-per-task=2 --mem=32G --qos=normal --time=02:00:00 \
-  "$PYTHON_BIN" -m research.world_pipeline.prepare_gt \
+  "$PYTHON_BIN" -m qwen_edit_pano.world_pipeline.prepare_gt \
   --pairs qwen_edit_pano/data/paired_pilot_v1 \
   --train-limit 9 --val-limit 2 --threads 2 \
   --output qwen_edit_pano/data/gt_world_pilot_v1
@@ -95,7 +95,7 @@ gt_world_pilot_v1/
 通过某个样本后记录决定（下面ID是实际候选，但仅在你看过并确认后执行）：
 
 ```bash
-"$PYTHON_BIN" -m research.world_pipeline.review_gt \
+"$PYTHON_BIN" -m qwen_edit_pano.world_pipeline.review_gt \
   --root qwen_edit_pano/data/gt_world_pilot_v1 \
   --id 5q7pvUzZiYa_7dc12a67ddfc4a4a849ce620db5b777b \
   --decision approved --notes '已检查三张RGB对应和Local/ERP实例轮廓'
@@ -153,7 +153,7 @@ CPU预检：
 ```bash
 srun -p debug --nodelist=GPU0 --nodes=1 --ntasks=1 \
   --cpus-per-task=2 --mem=8G --qos=normal --time=00:10:00 \
-  "$OBS_PY" -m research.world_pipeline.observer \
+  "$OBS_PY" -m qwen_edit_pano.world_pipeline.observer \
   --inputs qwen_edit_pano/data/gt_world_pilot_v1/observer_inputs.jsonl \
   --vocabulary qwen_edit_pano/data/gt_world_pilot_v1/vocabulary.json \
   --model Qwen/Qwen3-VL-8B-Instruct --preflight
@@ -170,7 +170,7 @@ srun -p debug --nodelist=GPU0 --nodes=1 --ntasks=1 \
 ```bash
 srun -p debug --nodelist=GPU0 --nodes=1 --ntasks=1 --gres=gpu:1 \
   --cpus-per-task=4 --mem=48G --qos=normal --time=02:00:00 \
-  "$OBS_PY" -m research.world_pipeline.observer \
+  "$OBS_PY" -m qwen_edit_pano.world_pipeline.observer \
   --inputs qwen_edit_pano/data/gt_world_pilot_v1/observer_inputs.jsonl \
   --vocabulary qwen_edit_pano/data/gt_world_pilot_v1/vocabulary.json \
   --model Qwen/Qwen3-VL-8B-Instruct \
@@ -189,7 +189,7 @@ Observer只读取白名单manifest中Local PNG及哈希、全局类别词表，�
 ```bash
 srun -p debug --nodelist=GPU0 --nodes=1 --ntasks=1 \
   --cpus-per-task=2 --mem=8G --qos=normal --time=00:10:00 \
-  "$PYTHON_BIN" -m research.world_pipeline.evaluate_observer \
+  "$PYTHON_BIN" -m qwen_edit_pano.world_pipeline.evaluate_observer \
   --gt qwen_edit_pano/data/gt_world_pilot_v1 \
   --predictions qwen_edit_pano/outputs/observer_pass_a_pilot_v1 \
   --review qwen_edit_pano/data/gt_world_pilot_v1/review_decisions.json \
@@ -210,7 +210,7 @@ srun -p debug --nodelist=GPU0 --nodes=1 --ntasks=1 \
 ```bash
 srun -p debug --nodelist=GPU0 --nodes=1 --ntasks=1 \
   --cpus-per-task=2 --mem=32G --qos=normal --time=04:00:00 \
-  "$PYTHON_BIN" -m research.world_pipeline.prepare_gt \
+  "$PYTHON_BIN" -m qwen_edit_pano.world_pipeline.prepare_gt \
   --pairs qwen_edit_pano/data/paired_full_v1 \
   --train-limit 32 --val-limit 8 --threads 2 \
   --output qwen_edit_pano/data/gt_world_expanded_v1
@@ -221,7 +221,7 @@ srun -p debug --nodelist=GPU0 --nodes=1 --ntasks=1 \
 开发者CPU检查命令：
 
 ```bash
-OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 "$PYTHON_BIN" -m research.world_pipeline.test_pipeline -v
+OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 "$PYTHON_BIN" -m qwen_edit_pano.world_pipeline.test_pipeline -v
 ```
 
 测试包括yaw/mirror与像素roll一致、OBB/AABB全尺寸与反射、真实Open3D CPU遮挡、未知面仍遮挡、合成场景完整单样本导出、G_obs房间信息隔离、输入白名单、Observer严格解析、重复/错类匹配及人工验收评分门槛。

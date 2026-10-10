@@ -1,0 +1,35 @@
+tier	MiB	path	reason	consequence
+A_LOW_RISK	313.750	/data-nfs/gpu1-2/u13529658780/DIT360/benchmark_assets/Matterport3D_raw/v1/scans/ULsKaCPVFJR/tmpksf_fj71	全部临时字节匹配完整ZIP前缀；对应ZIP CRC本轮通过：undistorted_normal_images.zip	旧无续传元数据临时片段；完整ZIP保留
+A_LOW_RISK	0.500	/data-nfs/gpu1-2/u13529658780/DIT360/benchmark_assets/Matterport3D_raw/v1/scans/ULsKaCPVFJR/tmprxfe2_hk	全部临时字节匹配完整ZIP前缀；对应ZIP CRC本轮通过：house_segmentations.zip	旧无续传元数据临时片段；完整ZIP保留
+A_LOW_RISK	40.000	/data-nfs/gpu1-2/u13529658780/DIT360/benchmark_assets/Matterport3D_raw/v1/scans/29hnd4uzFmX/tmp7dhq5c6b	全部临时字节匹配完整ZIP前缀；对应ZIP CRC本轮通过：matterport_skybox_images.zip	旧无续传元数据临时片段；完整ZIP保留
+A_LOW_RISK	288.328	/data-nfs/gpu1-2/u13529658780/DIT360/benchmark_assets/Matterport3D_raw/v1/scans/B6ByNegPMKs/tmpg5a26q9q	全部临时字节匹配完整ZIP前缀；对应ZIP CRC本轮通过：matterport_skybox_images.zip	旧无续传元数据临时片段；完整ZIP保留
+A_LOW_RISK	0.078	/data-nfs/gpu1-2/u13529658780/DIT360/benchmark_assets/Matterport3D_raw/v1/scans/x8F5xyUWy9e/tmpa9uj027j	全部临时字节匹配完整ZIP前缀；对应ZIP CRC本轮通过：undistorted_depth_images.zip	旧无续传元数据临时片段；完整ZIP保留
+A_LOW_RISK	28.001	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_edit_pano/outputs/oracle_full_smoke_v1/target_posteriors	失败smoke的可重建VAE后验缓存；v2训练与重载均完成	v1缓存需重算；保留父目录配置和失败记录
+A_LOW_RISK	1.215	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_edit_pano/outputs/paired_smoke_val_v1	失败推理目录；已有成功paired_smoke_val_v2	删除失败运行留下的图片和配置；建议先保留run_config.json
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch001/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch002/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch003/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch004/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch005/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch006/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch007/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch008/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch009/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch010/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch011/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch012/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch013/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch014/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch015/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch016/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch017/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch018/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch019/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch020/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch021/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch022/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch023/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+B_LOSE_OLD_RESUME	720.387	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch024/optimizer.bin	旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态	不能再从该旧epoch精确恢复训练；不是无用文件
+C_RETIRE_EXPERIMENT	1440.555	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_edit_pano/outputs/paired_smoke_v1/smoke-checkpoint	两步接口测试checkpoint；正式epoch001和成功smoke报告已经存在	删除后不能重放该smoke推理；先保留JSON报告；并非重复权重
+C_RETIRE_EXPERIMENT	2821.776	/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/zero_shot_2512	历史基线生成结果，非当前训练输入	仅在放弃对应比较实验且保存指标/配置后考虑；重新生成需要GPU
+C_RETIRE_EXPERIMENT	2794.129	/data-nfs/gpu1-2/u13529658780/DIT360/DiT360/outputs/mp3d_stitched1092_perid_g3_s28	历史基线生成结果，非当前训练输入	仅在放弃对应比较实验且保存指标/配置后考虑；重新生成需要GPU

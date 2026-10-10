@@ -1,0 +1,322 @@
+{
+  "benchmark_assets": {
+    "bytes": 51476387734,
+    "allocated_bytes": 51878141952,
+    "files": 99780
+  },
+  "benchmark_assets/Matterport3D_metadata": {
+    "bytes": 26550979,
+    "allocated_bytes": 380256256,
+    "files": 87300
+  },
+  "benchmark_assets/Matterport3D_raw": {
+    "bytes": 48842483885,
+    "allocated_bytes": 48843132928,
+    "files": 241
+  },
+  "benchmark_assets/Matterport3D_stitched_captions": {
+    "bytes": 293251,
+    "allocated_bytes": 44695552,
+    "files": 10912
+  },
+  "benchmark_assets/PanFusion": {
+    "bytes": 4367087,
+    "allocated_bytes": 5083136,
+    "files": 224
+  },
+  "benchmark_assets/archive": {
+    "bytes": 3336981,
+    "allocated_bytes": 3342336,
+    "files": 3
+  },
+  "benchmark_assets/downloads": {
+    "bytes": 123238400,
+    "allocated_bytes": 123248640,
+    "files": 2
+  },
+  "benchmark_assets/mp3d_stitched1092": {
+    "bytes": 2368424663,
+    "allocated_bytes": 2370674688,
+    "files": 1095
+  },
+  "benchmark_assets/weights": {
+    "bytes": 107692392,
+    "allocated_bytes": 107704320,
+    "files": 2
+  },
+  "qwen_edit_pano/outputs": {
+    "bytes": 10761664985,
+    "allocated_bytes": 10762256384,
+    "files": 208
+  },
+  "qwen_edit_pano/outputs/native_single_20260930_153216_4189404": {
+    "bytes": 1459138,
+    "allocated_bytes": 1462272,
+    "files": 3
+  },
+  "qwen_edit_pano/outputs/native_single_20260930_153422_4189404": {
+    "bytes": 24632184,
+    "allocated_bytes": 24686592,
+    "files": 23
+  },
+  "qwen_edit_pano/outputs/observer_ab_v3_checkpoint": {
+    "bytes": 226233,
+    "allocated_bytes": 274432,
+    "files": 16
+  },
+  "qwen_edit_pano/outputs/observer_ab_v3_checkpoint_metrics": {
+    "bytes": 5199,
+    "allocated_bytes": 8192,
+    "files": 1
+  },
+  "qwen_edit_pano/outputs/observer_ab_v3_greedy": {
+    "bytes": 88132,
+    "allocated_bytes": 131072,
+    "files": 14
+  },
+  "qwen_edit_pano/outputs/observer_ab_v3_greedy_metrics": {
+    "bytes": 3968,
+    "allocated_bytes": 4096,
+    "files": 1
+  },
+  "qwen_edit_pano/outputs/observer_pass_a_2samples_v2": {
+    "bytes": 18004,
+    "allocated_bytes": 57344,
+    "files": 12
+  },
+  "qwen_edit_pano/outputs/observer_pass_a_pilot_v1": {
+    "bytes": 18497,
+    "allocated_bytes": 49152,
+    "files": 10
+  },
+  "qwen_edit_pano/outputs/oracle_full_smoke_reload_v2": {
+    "bytes": 15744151,
+    "allocated_bytes": 15790080,
+    "files": 14
+  },
+  "qwen_edit_pano/outputs/oracle_full_smoke_v1": {
+    "bytes": 29368046,
+    "allocated_bytes": 29405184,
+    "files": 10
+  },
+  "qwen_edit_pano/outputs/oracle_full_smoke_v2": {
+    "bytes": 91946665,
+    "allocated_bytes": 92008448,
+    "files": 18
+  },
+  "qwen_edit_pano/outputs/paired_full_63637": {
+    "bytes": 9063522898,
+    "allocated_bytes": 9063661568,
+    "files": 51
+  },
+  "qwen_edit_pano/outputs/paired_native_val_v1": {
+    "bytes": 11179497,
+    "allocated_bytes": 11202560,
+    "files": 10
+  },
+  "qwen_edit_pano/outputs/paired_smoke_v1": {
+    "bytes": 1510567237,
+    "allocated_bytes": 1510592512,
+    "files": 10
+  },
+  "qwen_edit_pano/outputs/paired_smoke_val_v1": {
+    "bytes": 1274437,
+    "allocated_bytes": 1277952,
+    "files": 2
+  },
+  "qwen_edit_pano/outputs/paired_smoke_val_v2": {
+    "bytes": 11119677,
+    "allocated_bytes": 11141120,
+    "files": 10
+  },
+  "qwen_edit_pano/cache": {
+    "bytes": 32940976585,
+    "allocated_bytes": 32978952192,
+    "files": 15110
+  },
+  "qwen_edit_pano/cache/paired_full_v1": {
+    "bytes": 32801413589,
+    "allocated_bytes": 32839221248,
+    "files": 15044
+  },
+  "qwen_edit_pano/cache/paired_pilot_v1": {
+    "bytes": 139562996,
+    "allocated_bytes": 139730944,
+    "files": 66
+  },
+  "qwen_edit_pano/data": {
+    "bytes": 410140730,
+    "allocated_bytes": 412012544,
+    "files": 951
+  },
+  "qwen_edit_pano/data/gt_sources_full_v1": {
+    "bytes": 6420889,
+    "allocated_bytes": 6434816,
+    "files": 8
+  },
+  "qwen_edit_pano/data/gt_world_expanded_v1": {
+    "bytes": 245520618,
+    "allocated_bytes": 246358016,
+    "files": 442
+  },
+  "qwen_edit_pano/data/gt_world_pilot_v1": {
+    "bytes": 90882464,
+    "allocated_bytes": 91205632,
+    "files": 169
+  },
+  "qwen_edit_pano/data/official_building_split": {
+    "bytes": 21720993,
+    "allocated_bytes": 21749760,
+    "files": 10
+  },
+  "qwen_edit_pano/data/oracle_pilot_v1": {
+    "bytes": 16795,
+    "allocated_bytes": 20480,
+    "files": 2
+  },
+  "qwen_edit_pano/data/paired_aligned_cpu_check": {
+    "bytes": 2852017,
+    "allocated_bytes": 2871296,
+    "files": 8
+  },
+  "qwen_edit_pano/data/paired_cpu_check": {
+    "bytes": 2722292,
+    "allocated_bytes": 2744320,
+    "files": 9
+  },
+  "qwen_edit_pano/data/paired_full_v1": {
+    "bytes": 34732065,
+    "allocated_bytes": 35258368,
+    "files": 262
+  },
+  "qwen_edit_pano/data/paired_pilot_v1": {
+    "bytes": 5272006,
+    "allocated_bytes": 5365760,
+    "files": 40
+  },
+  "qwen_pano/outputs": {
+    "bytes": 51722029994,
+    "allocated_bytes": 51763433472,
+    "files": 14741
+  },
+  "qwen_pano/outputs/caupano": {
+    "bytes": 10952029843,
+    "allocated_bytes": 10987503616,
+    "files": 12294
+  },
+  "qwen_pano/outputs/pano_inference_63123-epoch25_scale0.5_n20": {
+    "bytes": 43142579,
+    "allocated_bytes": 43233280,
+    "files": 42
+  },
+  "qwen_pano/outputs/pano_official_full_59263": {
+    "bytes": 37764608544,
+    "allocated_bytes": 37765275648,
+    "files": 202
+  },
+  "qwen_pano/outputs/quality_zero_shot_all11_v1": {
+    "bytes": 2735822,
+    "allocated_bytes": 2740224,
+    "files": 4
+  },
+  "qwen_pano/outputs/slurm": {
+    "bytes": 0,
+    "allocated_bytes": 0,
+    "files": 0
+  },
+  "qwen_pano/outputs/zero_shot_2512": {
+    "bytes": 2958846233,
+    "allocated_bytes": 2963947520,
+    "files": 2187
+  },
+  "qwen_pano/cache": {
+    "bytes": 3227065665,
+    "allocated_bytes": 3249115136,
+    "files": 10267
+  },
+  "qwen_pano/cache/text_2512_official_full": {
+    "bytes": 3227065665,
+    "allocated_bytes": 3249115136,
+    "files": 10267
+  },
+  "DiT360/outputs": {
+    "bytes": 2989296948,
+    "allocated_bytes": 2994167808,
+    "files": 2277
+  },
+  "DiT360/outputs/mp3d_stitched1092_perid_eval8_v1": {
+    "bytes": 3260478,
+    "allocated_bytes": 3268608,
+    "files": 4
+  },
+  "DiT360/outputs/mp3d_stitched1092_perid_g3_s28": {
+    "bytes": 2929857127,
+    "allocated_bytes": 2934480896,
+    "files": 2186
+  },
+  "DiT360/outputs/mp3d_stitched1092_supplement_v1": {
+    "bytes": 11473009,
+    "allocated_bytes": 11526144,
+    "files": 18
+  },
+  "DiT360/outputs/panorama_author_all": {
+    "bytes": 54968,
+    "allocated_bytes": 69632,
+    "files": 6
+  },
+  "DiT360/outputs/panorama_author_cs_local": {
+    "bytes": 39297,
+    "allocated_bytes": 49152,
+    "files": 4
+  },
+  "DiT360/outputs/research": {
+    "bytes": 1375591,
+    "allocated_bytes": 1425408,
+    "files": 25
+  },
+  "DiT360/outputs/slurm": {
+    "bytes": 4246451,
+    "allocated_bytes": 4280320,
+    "files": 6
+  },
+  "DiT360/outputs/spatial_scene_v3": {
+    "bytes": 38990027,
+    "allocated_bytes": 39067648,
+    "files": 28
+  },
+  "research/audits": {
+    "bytes": 634485,
+    "allocated_bytes": 679936,
+    "files": 20
+  },
+  "research/audits/field_contract_devcheck_v1": {
+    "bytes": 67564,
+    "allocated_bytes": 81920,
+    "files": 6
+  },
+  "research/audits/field_contract_source_trace_v1": {
+    "bytes": 29082,
+    "allocated_bytes": 32768,
+    "files": 2
+  },
+  "research/audits/field_contract_v1": {
+    "bytes": 67564,
+    "allocated_bytes": 81920,
+    "files": 6
+  },
+  "research/audits/gt_world_2026-10-01_v1": {
+    "bytes": 437003,
+    "allocated_bytes": 442368,
+    "files": 2
+  },
+  "research/audits/oracle_bundle_devcheck_v1": {
+    "bytes": 16471,
+    "allocated_bytes": 20480,
+    "files": 2
+  },
+  "research/audits/oracle_bundle_devcheck_v2": {
+    "bytes": 16801,
+    "allocated_bytes": 20480,
+    "files": 2
+  }
+}

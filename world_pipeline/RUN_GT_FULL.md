@@ -16,7 +16,7 @@
 
 ```bash
 cd /data-nfs/gpu1-2/u13529658780/DIT360
-bash research/world_pipeline/run_gt_full.sh plan
+bash qwen_edit_pano/world_pipeline/run_gt_full.sh plan
 ```
 
 助手已执行上述CPU清点，生成 `gt_sources_full_v1/inventory.json`、`scans.txt`（72栋）、`missing_scans.txt`（66栋）。只清点，不下载、不生成mesh。
@@ -26,7 +26,7 @@ bash research/world_pipeline/run_gt_full.sh plan
 ```bash
 srun -p debug --nodes=1 --ntasks=1 --cpus-per-task=2 \
   --mem=8G --qos=normal --time=24:00:00 --pty \
-  bash research/world_pipeline/run_gt_full.sh download
+  bash qwen_edit_pano/world_pipeline/run_gt_full.sh download
 ```
 
 脚本调用现有download_mp_py3.py新增的 `--scan-list`，仅遍历当前72栋train/val建筑。保留下载器原条款确认，按终端提示自行确认。已有ZIP检查CRC后跳过；未完成.part按服务端Range支持情况续传，服务器不支持时该文件重新下载。超时/中断后重跑相同命令。没有下载任务由助手启动。
@@ -36,7 +36,7 @@ srun -p debug --nodes=1 --ntasks=1 --cpus-per-task=2 \
 ```bash
 srun -p debug --nodes=1 --ntasks=1 --cpus-per-task=4 \
   --mem=48G --qos=normal --time=24:00:00 \
-  bash research/world_pipeline/run_gt_full.sh build
+  bash qwen_edit_pano/world_pipeline/run_gt_full.sh build
 ```
 
 这一步以7521/925全量配对身份为目标，不再按旧world_state是否存在过滤。旧的合格canonical与每视点阶段用只读符号链接复用，缺少的调用原模块生成。不会向旧链接路径调用写入模块。
@@ -50,7 +50,7 @@ srun -p debug --nodes=1 --ntasks=1 --cpus-per-task=4 \
 ```bash
 srun -p debug --nodes=1 --ntasks=1 --cpus-per-task=4 \
   --mem=48G --qos=normal --time=24:00:00 \
-  bash research/world_pipeline/run_gt_full.sh export
+  bash qwen_edit_pano/world_pipeline/run_gt_full.sh export
 ```
 
 仅源状态全量构建成功后启动，读取新world-root，写新 `qwen_edit_pano/data/gt_world_full_v1`。若仍缺身份，`--require-all-pairs`拒绝把部分导出伪装成全量。第一次自动新建，后续同命令自动带`--resume`。每完成一个样本有DATA_COMPLETE.json和文件哈希，清单原子更新；恢复会校验并跳过完整样本，保留再重建未完成样本。完整样本的review_decisions保留，重新构建的样本需要重新审核。
@@ -65,7 +65,7 @@ srun -p debug --nodes=1 --ntasks=1 --cpus-per-task=4 \
 srun -p debug --nodes=1 --ntasks=1 --cpus-per-task=4 \
   --mem=48G --qos=normal --time=04:00:00 \
   /data-nfs/gpu1-2/u13529658780/.conda/envs/qwen360/bin/python -u \
-  -m research.world_pipeline.prepare_gt \
+  -m qwen_edit_pano.world_pipeline.prepare_gt \
   --pairs qwen_edit_pano/data/paired_full_v1 \
   --train-limit 0 --val-limit 0 --threads 4 --resume \
   --output qwen_edit_pano/data/gt_world_expanded_v1

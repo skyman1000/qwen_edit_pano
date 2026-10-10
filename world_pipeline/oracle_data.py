@@ -31,6 +31,7 @@ def main():
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--gt',type=Path,required=True)
     p.add_argument('--review',type=Path,required=True)
+    p.add_argument('--selection-policy',type=Path,help='Explicit user-authorized, manifest-bound experiment selection; not individual visual approval')
     p.add_argument('--paired-train',type=Path,default=Path('qwen_edit_pano/data/paired_full_v1/train.jsonl'))
     p.add_argument('--paired-val',type=Path,default=Path('qwen_edit_pano/data/paired_full_v1/val.jsonl'))
     p.add_argument('--cache',type=Path,default=Path('qwen_edit_pano/cache/paired_full_v1'))
@@ -71,6 +72,11 @@ def main():
     if sha(args.gt/'gt_manifest.jsonl')!=complete['gt_manifest_sha256']:
         raise ValueError('GT manifest changed')
     review=read(args.review); canonical={r['id']:r for r in train+val}
+    policy=None
+    if args.selection_policy:
+        from .experiment_selection import validate_selection
+        policy=read(args.selection_policy)
+        validate_selection(policy,args.gt,rows(args.gt/'gt_manifest.jsonl'))
     if len(canonical)!=len(train)+len(val):
         raise ValueError('Duplicate paired identity')
     vocabulary=read(args.gt/'vocabulary.json')
@@ -80,9 +86,14 @@ def main():
         checkpoint/'pano_config.json',checkpoint/'training_config.json',checkpoint/'COMPLETE.json',
         checkpoint/'adapter_resume.safetensors',checkpoint/'pytorch_lora_weights.safetensors']}
     entries=[]; excluded=[]
+    if policy:
+        protected[str(args.selection_policy.resolve())]=sha(args.selection_policy)
+    selected_ids=set(policy['selected_ids']) if policy else set()
     for record in rows(args.gt/'gt_manifest.jsonl'):
         sid=record['id']
-        if review.get(sid,{}).get('decision')!='approved' or record['review_flags']:
+        eligible=(sid in selected_ids and review.get(sid,{}).get('decision')!='rejected') if policy else (
+            review.get(sid,{}).get('decision')=='approved' and not record['review_flags'])
+        if not eligible:
             excluded.append(dict(id=sid,reason='unreviewed_or_flags',flags=record['review_flags']));continue
         row=canonical[sid]
         if row['split']!=record['split']:
@@ -115,6 +126,10 @@ def main():
         status='REVIEWED_PILOT_NOT_FORMAL_GT_CERTIFICATION',augmentation='none',
         description='GT-only oracle; original Local RGB conditioning; object category/center/AABB/masks; no room',
         source_hashes={p.name:sha(p) for p in Path(__file__).parent.glob('oracle_*.py')})
+    if policy:
+        report.update(status='USER_AUTHORIZED_SPOT_CHECKED_EXPERIMENT',
+            selection_policy=policy,
+            review_scope='Random spot check, not individual visual approval of every sample')
     write(out/'BUNDLE.json',report)
     print({k:report[k] for k in ('train_count','val_count','status')})
 

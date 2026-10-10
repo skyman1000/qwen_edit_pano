@@ -1,0 +1,308 @@
+[
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/benchmark_assets/Matterport3D_raw/v1/scans/ULsKaCPVFJR/tmpksf_fj71",
+    "tier": "A_LOW_RISK",
+    "bytes": 328990720,
+    "allocated_bytes": 328994816,
+    "files": 1,
+    "reason": "全部临时字节匹配完整ZIP前缀；对应ZIP CRC本轮通过：undistorted_normal_images.zip",
+    "consequence": "旧无续传元数据临时片段；完整ZIP保留"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/benchmark_assets/Matterport3D_raw/v1/scans/ULsKaCPVFJR/tmprxfe2_hk",
+    "tier": "A_LOW_RISK",
+    "bytes": 524288,
+    "allocated_bytes": 524288,
+    "files": 1,
+    "reason": "全部临时字节匹配完整ZIP前缀；对应ZIP CRC本轮通过：house_segmentations.zip",
+    "consequence": "旧无续传元数据临时片段；完整ZIP保留"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/benchmark_assets/Matterport3D_raw/v1/scans/29hnd4uzFmX/tmp7dhq5c6b",
+    "tier": "A_LOW_RISK",
+    "bytes": 41943040,
+    "allocated_bytes": 41943040,
+    "files": 1,
+    "reason": "全部临时字节匹配完整ZIP前缀；对应ZIP CRC本轮通过：matterport_skybox_images.zip",
+    "consequence": "旧无续传元数据临时片段；完整ZIP保留"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/benchmark_assets/Matterport3D_raw/v1/scans/B6ByNegPMKs/tmpg5a26q9q",
+    "tier": "A_LOW_RISK",
+    "bytes": 302333952,
+    "allocated_bytes": 302338048,
+    "files": 1,
+    "reason": "全部临时字节匹配完整ZIP前缀；对应ZIP CRC本轮通过：matterport_skybox_images.zip",
+    "consequence": "旧无续传元数据临时片段；完整ZIP保留"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/benchmark_assets/Matterport3D_raw/v1/scans/x8F5xyUWy9e/tmpa9uj027j",
+    "tier": "A_LOW_RISK",
+    "bytes": 81920,
+    "allocated_bytes": 81920,
+    "files": 1,
+    "reason": "全部临时字节匹配完整ZIP前缀；对应ZIP CRC本轮通过：undistorted_depth_images.zip",
+    "consequence": "旧无续传元数据临时片段；完整ZIP保留"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_edit_pano/outputs/oracle_full_smoke_v1/target_posteriors",
+    "tier": "A_LOW_RISK",
+    "bytes": 29361304,
+    "allocated_bytes": 29388800,
+    "files": 7,
+    "reason": "失败smoke的可重建VAE后验缓存；v2训练与重载均完成",
+    "consequence": "v1缓存需重算；保留父目录配置和失败记录"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_edit_pano/outputs/paired_smoke_val_v1",
+    "tier": "A_LOW_RISK",
+    "bytes": 1274437,
+    "allocated_bytes": 1277952,
+    "files": 2,
+    "reason": "失败推理目录；已有成功paired_smoke_val_v2",
+    "consequence": "删除失败运行留下的图片和配置；建议先保留run_config.json"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch001/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch002/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch003/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch004/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch005/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch006/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch007/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch008/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch009/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch010/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch011/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch012/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch013/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch014/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch015/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch016/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch017/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch018/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch019/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch020/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch021/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch022/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch023/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/pano_official_full_59263/checkpoint-epoch024/optimizer.bin",
+    "tier": "B_LOSE_OLD_RESUME",
+    "bytes": 755380082,
+    "allocated_bytes": 755384320,
+    "files": 1,
+    "reason": "旧Qwen-Pano已完成25epoch；保留各epoch推理权重和epoch025完整恢复状态",
+    "consequence": "不能再从该旧epoch精确恢复训练；不是无用文件"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_edit_pano/outputs/paired_smoke_v1/smoke-checkpoint",
+    "tier": "C_RETIRE_EXPERIMENT",
+    "bytes": 1510530913,
+    "allocated_bytes": 1510551552,
+    "files": 8,
+    "reason": "两步接口测试checkpoint；正式epoch001和成功smoke报告已经存在",
+    "consequence": "删除后不能重放该smoke推理；先保留JSON报告；并非重复权重"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_pano/outputs/zero_shot_2512",
+    "tier": "C_RETIRE_EXPERIMENT",
+    "bytes": 2958846233,
+    "allocated_bytes": 2963947520,
+    "files": 2187,
+    "reason": "历史基线生成结果，非当前训练输入",
+    "consequence": "仅在放弃对应比较实验且保存指标/配置后考虑；重新生成需要GPU"
+  },
+  {
+    "path": "/data-nfs/gpu1-2/u13529658780/DIT360/DiT360/outputs/mp3d_stitched1092_perid_g3_s28",
+    "tier": "C_RETIRE_EXPERIMENT",
+    "bytes": 2929857127,
+    "allocated_bytes": 2934480896,
+    "files": 2186,
+    "reason": "历史基线生成结果，非当前训练输入",
+    "consequence": "仅在放弃对应比较实验且保存指标/配置后考虑；重新生成需要GPU"
+  }
+]

@@ -108,6 +108,22 @@ class RecoveryTests(unittest.TestCase):
             recovered, observer = load_sample(directory)
             self.assertEqual(recovered, manifest)
             self.assertEqual(observer['id'], row['id'])
+            # Relocated packages must accept known pre-move orchestration hashes
+            # while still rejecting arbitrary implementation changes.
+            marker = read(out/'resume_contract.json')
+            marker['implementation'] = {
+                k.replace('/qwen_edit_pano/world_pipeline/', '/research/world_pipeline/'):
+                    ('c7208df32165f94df039bd58acf9b3d5e7d0fcf219f542bcad1957b89f536bdb'
+                     if k.endswith('/prepare_gt.py') else v)
+                for k, v in marker['implementation'].items()}
+            atomic_json(out/'resume_contract.json', marker)
+            prepare_gt.validate_resume(out, read(out/'contract.json'), [row])
+            self.assertTrue((out/'resume_contract.before_relocation.json').is_file())
+            bad = read(out/'resume_contract.json')
+            bad['implementation'][str(Path(prepare_gt.__file__).resolve())] = '0'*64
+            atomic_json(out/'resume_contract.json', bad)
+            with self.assertRaises(ValueError):
+                prepare_gt.validate_resume(out, read(out/'contract.json'), [row])
             changed = read(out/'contract.json')
             changed['thresholds']['ncc'] = 0.9
             with self.assertRaises(ValueError):

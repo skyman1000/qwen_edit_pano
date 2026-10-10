@@ -2,7 +2,7 @@
 
 本入口只训练新World Encoder/Adapter。GT来自Matterport原始house对象/mesh，经gt_world_pilot_v1相机转换和可见性派生；完全不读取Qwen3-VL预测。Local仍通过原Edit图文embeddings与reference latent输入；完整ERP RGB仅为监督目标。
 
-已核实paired_full_63637/checkpoint-epoch001完成1 epoch/1881 optimizer steps。可以固定作初期基线，不是25epoch最终模型，不覆盖它、不恢复其optimizer、不改变正在运行的Edit训练。代码全在research/world_pipeline/oracle_*.py。
+已核实paired_full_63637/checkpoint-epoch001完成1 epoch/1881 optimizer steps。可以固定作初期基线，不是25epoch最终模型，不覆盖它、不恢复其optimizer、不改变正在运行的Edit训练。代码全在qwen_edit_pano/world_pipeline/oracle_*.py。
 
 当前GT筛选后7 train/0 val，仅用于接入smoke、重载和小样本拟合。4个flags样本仍排除，不能宣称验证集收益。purpose=oracle在没有合格val时明确拒绝执行。后续须解决GT可见性规则并扩展独立val，再用相同预算的constant/observed/full分支做正式oracle；全局打乱只是补充诊断。
 
@@ -28,7 +28,7 @@ export OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 MKL_NUM_THREADS=2
 
 srun -p debug --nodes=1 --ntasks=1 --cpus-per-task=2 \
   --mem=8G --qos=normal --time=00:10:00 \
-  "$PYTHON_BIN" -m research.world_pipeline.oracle_data \
+  "$PYTHON_BIN" -m qwen_edit_pano.world_pipeline.oracle_data \
   --gt qwen_edit_pano/data/gt_world_pilot_v1 \
   --review qwen_edit_pano/data/gt_world_pilot_v1/assistant_review_decisions_2026-10-02.json \
   --base-checkpoint qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch001 \
@@ -40,8 +40,8 @@ srun -p debug --nodes=1 --ntasks=1 --cpus-per-task=2 \
 可选CPU测试（助手已执行，不必重复）：
 
 ```bash
-"$PYTHON_BIN" -m research.world_pipeline.oracle_test -v
-"$PYTHON_BIN" -m research.world_pipeline.oracle_train \
+"$PYTHON_BIN" -m qwen_edit_pano.world_pipeline.oracle_test -v
+"$PYTHON_BIN" -m qwen_edit_pano.world_pipeline.oracle_train \
   --bundle qwen_edit_pano/data/oracle_pilot_v1 --preflight
 ```
 
@@ -54,7 +54,7 @@ srun -p debug --nodes=1 --ntasks=1 --cpus-per-task=2 \
 ```bash
 srun -p debug --nodelist=GPU2 --nodes=1 --ntasks=1 --gres=gpu:1 \
   --cpus-per-task=4 --mem=96G --qos=normal --time=02:00:00 \
-  "$PYTHON_BIN" -u -m research.world_pipeline.oracle_train \
+  "$PYTHON_BIN" -u -m qwen_edit_pano.world_pipeline.oracle_train \
   --bundle qwen_edit_pano/data/oracle_pilot_v1 \
   --condition full --purpose pilot --smoke --activation-storage cpu \
   --output qwen_edit_pano/outputs/oracle_full_smoke_v2
@@ -67,7 +67,7 @@ srun -p debug --nodelist=GPU2 --nodes=1 --ntasks=1 --gres=gpu:1 \
 ```bash
 srun -p debug --nodelist=GPU2 --nodes=1 --ntasks=1 --gres=gpu:1 \
   --cpus-per-task=4 --mem=96G --qos=normal --time=02:00:00 \
-  "$PYTHON_BIN" -u -m research.world_pipeline.oracle_inference \
+  "$PYTHON_BIN" -u -m qwen_edit_pano.world_pipeline.oracle_inference \
   --checkpoint qwen_edit_pano/outputs/oracle_full_smoke_v2/checkpoint-step000002 \
   --split train --limit 2 --modes baseline correct \
   --output qwen_edit_pano/outputs/oracle_full_smoke_reload_v2
@@ -82,7 +82,7 @@ srun -p debug --nodelist=GPU2 --nodes=1 --ntasks=1 --gres=gpu:1 \
 ```bash
 srun -p debug --nodelist=GPU2 --nodes=1 --ntasks=1 --gres=gpu:1 \
   --cpus-per-task=4 --mem=96G --qos=normal --time=24:00:00 \
-  "$PYTHON_BIN" -u -m research.world_pipeline.oracle_train \
+  "$PYTHON_BIN" -u -m qwen_edit_pano.world_pipeline.oracle_train \
   --bundle qwen_edit_pano/data/oracle_pilot_v1 \
   --condition full --purpose pilot --steps 200 --warmup-steps 20 \
   --output qwen_edit_pano/outputs/oracle_full_fit_v1
