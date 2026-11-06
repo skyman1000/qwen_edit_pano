@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>对象状态与全景监督检查</title>
+<style>
+body{font:15px/1.65 system-ui,sans-serif;max-width:1250px;margin:24px auto;padding:0 18px;background:#f5f6f8;color:#17212d}h1{font-size:25px}details{background:white;border:1px solid #ccd4df;border-radius:8px;margin:14px 0;padding:12px}summary{cursor:pointer;font-weight:650;overflow-wrap:anywhere}.note{color:#455466}.tools{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:12px 0}button,select,textarea{font:inherit;padding:6px}select{max-width:100%}textarea{box-sizing:border-box;width:100%}.pair{display:grid;grid-template-columns:1fr 1fr;gap:10px}.pair img,.pair canvas{width:100%;height:auto}canvas.erp{display:block;width:100%;height:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#edf1f6;padding:10px;font-size:13px}.legend span{margin-right:16px}.green{color:#087a2d}.red{color:#d52b3d}.orange{color:#a95a00}.cyan{color:#086a90}.state{font-size:13px}figcaption{font-weight:600}figure{margin:0}#failures{color:#a12125}
+</style>
+<h1>对象状态、图像与区域监督检查</h1>
+<p>本页只供核查。所有记录初始为待审；不会自动删除样本、修改数据集或认定训练可用。</p>
+<p class="legend"><span class="green">绿：实例边界参与当前区域Loss</span><span class="red">红：实例边界未参与区域Loss</span><span class="orange">橙：选中对象的相机轴AABB投影</span><span class="cyan">蓝虚线：当前纬度裁剪边界</span></p>
+<p class="note">对比Local原图与polished正前方，检查对象位置和实例轮廓。点击图中对象或从列表选择，可单独检查小物体、三维中心/尺寸及被裁掉的监督。AABB包含空白或遮挡部分，不要求紧贴可见轮廓；投影重合也不能单独证明米制深度正确。正前方mask来自ERP采样，不是独立标注。</p>
+<div class="tools"><label>样本来源 <select id="filter"><option value="all">全部</option><option value="existing">原成功样本</option><option value="recovered">恢复候选</option></select></label><button id="export">导出检查记录</button><span id="counts"></span></div>
+<p class="note">检查意见保留在当前页面，关闭前请导出。</p>
+<div id="cases"></div><details><summary>构建或渲染失败记录</summary><pre id="failures">__FAILURES__</pre></details>
+<script>
+const cases=__CASES__;
+const decisions=Object.fromEntries(cases.map(c=>[c.id,{id:c.id,decision:'pending',notes:''}]));
+const root=document.querySelector('#cases');
+document.querySelector('#counts').textContent=`${cases.length} 个对照样本；抽样结果不能代表全数据准确率。`;
+function image(src){return new Promise((resolve,reject)=>{const value=new Image();value.onload=()=>resolve(value);value.onerror=reject;value.src=src;});}
+function pixels(img){const canvas=document.createElement('canvas');canvas.width=img.width;canvas.height=img.height;const ctx=canvas.getContext('2d');ctx.drawImage(img,0,0);return ctx.getImageData(0,0,img.width,img.height).data;}
+function decode(img){const rgba=pixels(img),ids=new Int32Array(img.width*img.height);for(let i=0;i<ids.length;i++)ids[i]=(rgba[4*i]<<16)|(rgba[4*i+1]<<8)|rgba[4*i+2];return ids;}
+function project(point,w,h,erp){const [x,y,z]=point;if(erp){if(Math.hypot(x,y,z)<1e-5)return null;return [(.5+Math.atan2(x,z)/(2*Math.PI))*w,(.5-Math.atan2(y,Math.hypot(x,z))/Math.PI)*h];}if(z<=.001)return null;return [w/2+w*x/(2*z),h/2-w*y/(2*z)];}
+function drawBox(ctx,obj,w,h,erp){if(!obj||!obj.center_valid||!obj.size_valid||!obj.center||!obj.size)return;const corners=Array.from({length:8},(_,i)=>obj.center.map((v,j)=>v+obj.size[j]*((i&(1<<j))?.5:-.5)));ctx.strokeStyle='#ff9c21';ctx.lineWidth=1.8;ctx.setLineDash([]);for(let i=0;i<8;i++)for(let axis=0;axis<3;axis++){const j=i^(1<<axis);if(j<i)continue;let previous=null;for(let step=0;step<=40;step++){const t=step/40,p=corners[i].map((v,k)=>v*(1-t)+corners[j][k]*t),q=project(p,w,h,erp);if(q&&previous&&(!erp||Math.abs(q[0]-previous[0])<w/2)){ctx.beginPath();ctx.moveTo(...previous);ctx.lineTo(...q);ctx.stroke();}previous=q;}}}
+async function initialize(section,c){
+ const body=section.querySelector('.body');body.textContent='正在加载对照图…';
+ const keys=['local','ERP','ERP_ids','ERP_loss','front','front_ids','front_loss'];
+ const loaded=Object.fromEntries(await Promise.all(keys.map(async key=>[key,await image(c.images[key])])));
+ body.innerHTML='<div class="tools"><label>对象 <select class="object"></select></label><label><input class="show" type="checkbox" checked>显示轮廓和AABB</label></div><pre class="objectInfo"></pre><div class="pair"><figure><figcaption>输入Local原图</figcaption><img class="local"></figure><figure><figcaption>polished正前方＋实例区域</figcaption><canvas class="front"></canvas></figure></div><figure><figcaption>完整polished ERP：点击对象可单独检查</figcaption><canvas class="erp"></canvas></figure><pre class="state"></pre><div class="tools"><label>目视意见 <select class="decision"><option value="pending">待审</option><option value="looks_consistent">目视基本对应</option><option value="needs_fix">发现错位或其它问题</option></select></label></div><textarea class="notes" rows="2" placeholder="记录具体对象ID、错位方向、极区或小物体问题"></textarea>';
+ body.querySelector('.local').src=c.images.local;
+ const select=body.querySelector('.object');select.add(new Option('全部实例（先看整体）','0'));
+ const objects=[...c.objects].sort((a,b)=>a.ERP_pixels-b.ERP_pixels||a.id-b.id);
+ for(const obj of objects)select.add(new Option(`${obj.id}: ${obj.category}｜ERP ${obj.ERP_pixels}像素，区域Loss ${obj.region_loss_pixels}像素`,String(obj.id)));
+ const map=Object.fromEntries(c.objects.map(o=>[o.id,o]));
+ const views=[{canvas:body.querySelector('.erp'),rgb:loaded.ERP,ids:decode(loaded.ERP_ids),loss:pixels(loaded.ERP_loss),erp:true},{canvas:body.querySelector('.front'),rgb:loaded.front,ids:decode(loaded.front_ids),loss:pixels(loaded.front_loss),erp:false}];
+ for(const view of views){view.canvas.width=view.rgb.width;view.canvas.height=view.rgb.height;view.canvas.onclick=e=>{const rect=view.canvas.getBoundingClientRect(),x=Math.min(view.canvas.width-1,Math.floor((e.clientX-rect.left)/rect.width*view.canvas.width)),y=Math.min(view.canvas.height-1,Math.floor((e.clientY-rect.top)/rect.height*view.canvas.height));const id=view.ids[y*view.canvas.width+x];if(map[id]){select.value=String(id);redraw();}};}
+ function redraw(){const selected=Number(select.value),show=body.querySelector('.show').checked,obj=map[selected];body.querySelector('.objectInfo').textContent=obj?JSON.stringify(obj,null,2):'请选择单个对象检查状态、轮廓和AABB。红色只说明当前未施加区域Loss，不代表该像素确实错误。';
+  for(const view of views){const {canvas,rgb,ids,loss,erp}=view,w=canvas.width,h=canvas.height,ctx=canvas.getContext('2d');ctx.drawImage(rgb,0,0);if(!show)continue;const im=ctx.getImageData(0,0,w,h),rgba=im.data;
+   for(let y=0;y<h;y++)for(let x=0;x<w;x++){const i=y*w+x,id=ids[i];if(!id||(selected&&id!==selected))continue;const active=loss[4*i]>0,color=active?[30,255,70]:[255,60,70];if(selected)for(let k=0;k<3;k++)rgba[4*i+k]=.88*rgba[4*i+k]+.12*color[k];const left=ids[y*w+(erp?(x+w-1)%w:Math.max(0,x-1))],right=ids[y*w+(erp?(x+1)%w:Math.min(w-1,x+1))],up=ids[Math.max(0,y-1)*w+x],down=ids[Math.min(h-1,y+1)*w+x];if([left,right,up,down].some(v=>v!==id))for(let k=0;k<3;k++)rgba[4*i+k]=color[k];}
+   ctx.putImageData(im,0,0);if(erp){ctx.strokeStyle='#31c4ef';ctx.lineWidth=1;ctx.setLineDash([7,6]);for(const y of [h*(.5-c.latitude_limit/180),h*(.5+c.latitude_limit/180)]){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(w,y);ctx.stroke();}ctx.setLineDash([]);}drawBox(ctx,obj,w,h,erp);
+  }
+ }
+ select.onchange=redraw;body.querySelector('.show').onchange=redraw;
+ const metadata={来源:c.reason,状态:c.state_status,对象数:c.objects.length,Local与polished正前方NCC:c.front_NCC,拟合内点:c.fit_inliers,验证内点:c.heldout_inliers,验证观测数:c.heldout_observations,验证角误差中位数:c.heldout_median_degrees,拟合yaw奇偶:c.fit_yaw_parity,当前纬度范围:c.latitude_limit,参与区域Loss的ERP像素比例:c.region_loss_fraction,无区域Loss像素的条件对象:c.objects_without_region_loss,ERP像素不超过64的小对象:c.small_ERP_objects};body.querySelector('.state').textContent=JSON.stringify(metadata,null,2);
+ body.querySelector('.decision').onchange=e=>decisions[c.id].decision=e.target.value;
+ body.querySelector('.notes').oninput=e=>decisions[c.id].notes=e.target.value;
+ redraw();
+}
+for(const c of cases){const section=document.createElement('details');section.dataset.group=c.reason==='recovered_candidate'?'recovered':'existing';const summary=document.createElement('summary');summary.textContent=`${c.id}｜${c.reason}｜${c.objects.length}对象`;const body=document.createElement('div');body.className='body';section.append(summary,body);let started=false;section.ontoggle=()=>{if(section.open&&!started){started=true;initialize(section,c).catch(error=>{body.textContent='显示失败：'+String(error);});}};root.append(section);}
+document.querySelector('#filter').onchange=e=>{for(const section of root.children)section.hidden=e.target.value!=='all'&&section.dataset.group!==e.target.value;};
+document.querySelector('#export').onclick=()=>{const blob=new Blob([JSON.stringify({type:'manual_visual_review_only',ready_for_training:false,decisions:Object.values(decisions)},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='review_decisions.json';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+</script></html>

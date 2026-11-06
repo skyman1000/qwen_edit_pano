@@ -1,0 +1,74 @@
+{
+  "room_type": "bedroom",
+  "scene_hypothesis": "A modern, minimalist bedroom with a bed centered against a gray accent wall, flanked by two nightstands and illuminated by ceiling lights and table lamps. The room includes a window with blinds, framed wall art, and decorative objects on the nightstand. To complete the functional and aesthetic setup, additional items are added to enhance comfort and utility without disrupting the existing layout.",
+  "additions": [
+    {
+      "id": "add_0001",
+      "category": "chair",
+      "center": [
+        2.358647937774658,
+        0.3732750654220581,
+        4.446282386779785
+      ],
+      "size": [
+        0.6769609451293945,
+        0.7868872880935669,
+        0.6999285221099854
+      ],
+      "description": "modern armchair with dark fabric",
+      "reason": "Provides seating for reading or relaxing near the window, complementing the room's modern aesthetic.",
+      "unseen_reason": "outside_fov"
+    },
+    {
+      "id": "add_0002",
+      "category": "plant",
+      "center": [
+        2.4325690364837644,
+        0.1689889544248581,
+        4.691537857055664
+      ],
+      "size": [
+        0.3756427340460205,
+        0.6923899173736572,
+        0.5608066320419312
+      ],
+      "description": "tall indoor plant in ceramic pot",
+      "reason": "Adds natural element and visual interest near the chair, enhancing the room’s ambiance.",
+      "unseen_reason": "outside_fov"
+    },
+    {
+      "id": "add_0003",
+      "category": "cabinet",
+      "center": [
+        2.784672546386719,
+        -0.5542042851448059,
+        4.636356353759766
+      ],
+      "size": [
+        0.6029567718505859,
+        1.296270482535362,
+        0.58223295211792
+      ],
+      "description": "wooden storage cabinet",
+      "reason": "Offers additional storage space for clothes or linens, placed near the door for easy access.",
+      "unseen_reason": "outside_fov"
+    },
+    {
+      "id": "add_0004",
+      "category": "door",
+      "center": [
+        2.823235397338867,
+        0.08957366216182709,
+        4.458444642547607
+      ],
+      "size": [
+        0.12839889765262605,
+        2.067670237975037,
+        0.15333478689193725
+      ],
+      "description": "sliding glass door leading to balcony",
+      "reason": "Connects the bedroom to an outdoor space, allowing natural light and ventilation while maintaining privacy with curtains.",
+      "unseen_reason": "outside_fov"
+    }
+  ]
+}

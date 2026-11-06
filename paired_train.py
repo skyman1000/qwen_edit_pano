@@ -129,10 +129,13 @@ def main():
     config["augmentation"] = "synchronized_horizontal_flip_only_no_random_yaw" if args.augment else "none"
     config["conditioning_prompt"] = cache_config["prompt"]
     if args.resume:
-        from .resume_compat import compatible_config
+        from .resume_compat import config_differences
         old = json.loads((args.resume / "training_config.json").read_text())
-        if not compatible_config(old, config):
-            raise ValueError("Resume configuration changed. For a new experiment, use base weights and a new output")
+        differences = config_differences(old, config)
+        if differences:
+            raise ValueError("Resume training configuration differs: " + ", ".join(differences))
+        if old.get('source_hashes') != config.get('source_hashes'):
+            accelerator.print('Source files changed; source hashes are recorded but do not block resume. Training settings match.')
         if not (args.resume / "COMPLETE.json").exists():
             raise ValueError("Checkpoint incomplete; use the previous completed epoch checkpoint")
     config_path = args.output / "training_config.json"
@@ -140,9 +143,10 @@ def main():
     if args.output.exists() and any(args.output.iterdir()) and not args.resume:
         raise ValueError("Output must be empty for a new training run")
     if config_path.exists():
-        from .resume_compat import compatible_config
-        if not compatible_config(json.loads(config_path.read_text()), config):
-            raise ValueError("Output belongs to another experiment")
+        from .resume_compat import config_differences
+        differences = config_differences(json.loads(config_path.read_text()), config)
+        if differences:
+            raise ValueError("Output training configuration differs: " + ", ".join(differences))
     accelerator.wait_for_everyone()
     if accelerator.is_main_process:
         args.output.mkdir(parents=True, exist_ok=True)

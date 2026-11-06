@@ -1,6 +1,7 @@
 """Load paired LoRA into native EditPlus; Local RGB only, no GT model inputs."""
 import argparse
 import json
+import math
 from pathlib import Path
 from .common import (DEFAULT_MODEL, atomic_json, check_ids, model_snapshot, require_local_output,
                      require_versions, read_jsonl, sample_seed, sha256, versions)
@@ -22,9 +23,13 @@ def main():
     p.add_argument('--seed',type=int,default=0)
     p.add_argument('--cfg',type=float,default=4.)
     p.add_argument('--offload',choices=['model','sequential','none'],default='model')
+    p.add_argument('--lora-scale', type=float, default=0.5,
+                   help='LoRA adapter weight when loading a checkpoint (default: 0.5)')
     args = p.parse_args()
     if args.limit < 1 or args.steps < 1:
         p.error('limit/steps must be positive')
+    if not math.isfinite(args.lora_scale) or args.lora_scale < 0:
+        p.error('lora-scale must be finite and nonnegative')
     require_local_output(args.output,'outputs')
     require_versions()
     import torch
@@ -54,7 +59,9 @@ def main():
     pipe.vae.to(dtype=torch.float32)
     if config:
         pipe.load_lora_weights(str(args.checkpoint), weight_name=lora_weight_name,
-                               local_files_only=True, use_safetensors=True)
+                               adapter_name='pano', local_files_only=True, use_safetensors=True)
+        pipe.set_adapters('pano', adapter_weights=args.lora_scale)
+        print(f'LoRA scale: {args.lora_scale}', flush=True)
         pipe.enable_pano(config['padding_columns'])
     for module in (pipe.transformer,pipe.vae,pipe.text_encoder):
         enforce_inference_eval(module)
@@ -65,6 +72,7 @@ def main():
     else:
         pipe.to('cuda')
     run_config = dict(base_snapshot=snapshot,prompt=prompt,steps=args.steps,cfg=args.cfg,seed=args.seed,
+                      lora_scale=args.lora_scale if config else None,
                       width=2048,height=1024,versions=versions(),checkpoint=str(args.checkpoint),
                       checkpoint_sha256=sha256(args.checkpoint/'adapter_resume.safetensors') if config else None,
                       manifest_sha256=sha256(args.manifest) if args.manifest else None,

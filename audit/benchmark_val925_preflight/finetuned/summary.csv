@@ -1,0 +1,12 @@
+﻿metric,direction,status,value,std,n,n_real,n_generated,reason
+fid,lower,ready,,,,,,
+fidclip,lower,ready,,,,,,
+fidpole,lower,ready,,,,,,
+fidequ,lower,ready,,,,,,
+faed,lower,ready,,,,,,
+is,higher,ready,,,,,,
+cs,higher,ready,,,,,,
+qaquality,higher,ready,,,,,,
+qaaesthetic,higher,ready,,,,,,
+brisque,lower,ready,,,,,,
+niqe,lower,ready,,,,,,

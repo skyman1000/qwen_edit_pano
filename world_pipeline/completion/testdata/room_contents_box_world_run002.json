@@ -1,0 +1,38 @@
+{
+  "room_type": "bedroom",
+  "scene_hypothesis": "A modern, minimalist bedroom with a central bed, two nightstands, and wall art. The visible portion shows the right side of the room from a partial view; the left side is obscured by a wall or doorway. The unobserved area likely contains the opposite wall, a closet, and possibly a second nightstand or storage unit to complete the symmetry.",
+  "additions": [
+    {
+      "id": "new_01",
+      "category": "chest_of_drawers",
+      "description": "wooden chest of drawers matching the existing nightstand, for symmetrical balance",
+      "reason": "Completes the visual symmetry of the bedroom layout, as the visible nightstand is on the right side of the bed.",
+      "placement_intent": "on the left side of the bed, mirroring the position of observed_0012"
+    },
+    {
+      "id": "new_02",
+      "category": "picture",
+      "description": "black framed wall art, matching the style of observed_0002 and observed_0003",
+      "reason": "Balances the wall decor across the room's width, creating a cohesive aesthetic.",
+      "placement_intent": "on the left wall, above new_01, aligned with the existing pictures"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "new_01",
+      "type": "left_of",
+      "target": "observed_0000"
+    },
+    {
+      "subject": "new_02",
+      "type": "above",
+      "target": "new_01"
+    },
+    {
+      "subject": "new_01",
+      "type": "near",
+      "target": "observed_0001",
+      "max_gap_m": 1.0
+    }
+  ]
+}

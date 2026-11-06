@@ -1,0 +1,809 @@
+{
+  "bedroom": [
+    {
+      "category": "sofa",
+      "description": "white modern sectional sofa",
+      "bbox_2d": [
+        198,
+        623,
+        924,
+        1000
+      ]
+    },
+    {
+      "category": "cushion",
+      "description": "orange square throw pillow",
+      "bbox_2d": [
+        301,
+        675,
+        448,
+        819
+      ]
+    },
+    {
+      "category": "cushion",
+      "description": "black and white patterned pillow",
+      "bbox_2d": [
+        457,
+        737,
+        572,
+        977
+      ]
+    },
+    {
+      "category": "cushion",
+      "description": "solid orange rectangular pillow",
+      "bbox_2d": [
+        522,
+        757,
+        652,
+        1000
+      ]
+    },
+    {
+      "category": "cushion",
+      "description": "dark gray textured pillow",
+      "bbox_2d": [
+        622,
+        794,
+        805,
+        1000
+      ]
+    },
+    {
+      "category": "cushion",
+      "description": "gray cushion with black dots",
+      "bbox_2d": [
+        282,
+        643,
+        384,
+        747
+      ]
+    },
+    {
+      "category": "cushion",
+      "description": "black cushion partially visible",
+      "bbox_2d": [
+        282,
+        668,
+        421,
+        783
+      ]
+    },
+    {
+      "category": "picture",
+      "description": "large black and white cityscape artwork",
+      "bbox_2d": [
+        435,
+        320,
+        825,
+        692
+      ]
+    },
+    {
+      "category": "plant",
+      "description": "tall green leafy plant",
+      "bbox_2d": [
+        243,
+        502,
+        373,
+        668
+      ]
+    },
+    {
+      "category": "plant",
+      "description": "small potted plant on side table",
+      "bbox_2d": [
+        0,
+        453,
+        82,
+        600
+      ]
+    },
+    {
+      "category": "table",
+      "description": "small black side table",
+      "bbox_2d": [
+        222,
+        671,
+        285,
+        764
+      ]
+    },
+    {
+      "category": "clock",
+      "description": "round analog wall clock",
+      "bbox_2d": [
+        125,
+        428,
+        216,
+        535
+      ]
+    },
+    {
+      "category": "lighting",
+      "description": "ceiling recessed light",
+      "bbox_2d": [
+        246,
+        204,
+        273,
+        226
+      ]
+    },
+    {
+      "category": "lighting",
+      "description": "bamboo shade lamp",
+      "bbox_2d": [
+        943,
+        490,
+        1000,
+        690
+      ]
+    },
+    {
+      "category": "door",
+      "description": "arched doorway to adjacent room",
+      "bbox_2d": [
+        0,
+        362,
+        47,
+        597
+      ]
+    },
+    {
+      "category": "counter",
+      "description": "white kitchen counter edge",
+      "bbox_2d": [
+        0,
+        597,
+        47,
+        710
+      ]
+    }
+  ],
+  "bath": [
+    {
+      "category": "bathtub",
+      "description": "marble bathtub with towels",
+      "bbox_2d": [
+        0,
+        634,
+        495,
+        997
+      ]
+    },
+    {
+      "category": "door",
+      "description": "modern door frame",
+      "bbox_2d": [
+        1,
+        0,
+        746,
+        1000
+      ]
+    },
+    {
+      "category": "lighting",
+      "description": "curved ceiling light fixture",
+      "bbox_2d": [
+        0,
+        128,
+        528,
+        397
+      ]
+    },
+    {
+      "category": "towel",
+      "description": "striped towel on bathtub",
+      "bbox_2d": [
+        0,
+        634,
+        457,
+        808
+      ]
+    },
+    {
+      "category": "candle",
+      "description": "small candle on bathtub edge",
+      "bbox_2d": [
+        219,
+        639,
+        233,
+        656
+      ]
+    },
+    {
+      "category": "candle",
+      "bbox_2d": [
+        471,
+        652,
+        485,
+        670
+      ]
+    },
+    {
+      "category": "objects",
+      "description": "decorative bowl on bathtub",
+      "bbox_2d": [
+        37,
+        682,
+        96,
+        736
+      ]
+    },
+    {
+      "category": "objects",
+      "description": "red flower arrangement",
+      "bbox_2d": [
+        234,
+        686,
+        274,
+        707
+      ]
+    },
+    {
+      "category": "objects",
+      "description": "red flower arrangement",
+      "bbox_2d": [
+        264,
+        638,
+        293,
+        656
+      ]
+    },
+    {
+      "category": "board_panel",
+      "description": "blue and white patterned panel",
+      "bbox_2d": [
+        419,
+        422,
+        506,
+        613
+      ]
+    },
+    {
+      "category": "seating",
+      "description": "built-in bench seating",
+      "bbox_2d": [
+        399,
+        603,
+        564,
+        680
+      ]
+    }
+  ],
+  "sauna": {
+    "program": {
+      "room_type": "sauna",
+      "scene_hypothesis": "A functional sauna with a visible shower and seating area, extended by a towel storage and lighting zone on the right side.",
+      "groups": [
+        {
+          "id": "towel_storage_and_lighting",
+          "region": "right",
+          "along_m": 1.5,
+          "clearance_m": 0.3,
+          "objects": [
+            {
+              "id": "new_towel_rack",
+              "category": "misc",
+              "size": [
+                0.25,
+                0.8,
+                0.15
+              ],
+              "height_anchor_id": "observed_0002",
+              "height_alignment": "bottom",
+              "height_offset_m": 0.0,
+              "description": "wall-mounted towel rack for drying towels after sauna or shower.",
+              "reason": "Provides convenient storage for towels in the sauna space."
+            },
+            {
+              "id": "new_shelf",
+              "category": "shelving",
+              "size": [
+                0.3,
+                0.6,
+                0.25
+              ],
+              "anchor_id": "new_towel_rack",
+              "direction": "below",
+              "gap_m": 0.1,
+              "vertical_alignment": "bottom",
+              "description": "small shelf below towel rack for holding sauna accessories.",
+              "reason": "Offers additional storage space for sauna-related items."
+            }
+          ]
+        }
+      ]
+    },
+    "observed": [
+      {
+        "id": "observed_0000",
+        "category": "window",
+        "description": "wood-framed glass window",
+        "bbox_2d": [
+          0.435,
+          0.356,
+          0.648,
+          0.961
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0001",
+        "category": "shower",
+        "description": "glass shower enclosure",
+        "bbox_2d": [
+          0.897,
+          0.43,
+          1.0,
+          0.835
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0002",
+        "category": "lighting",
+        "description": "ceiling-mounted recessed light",
+        "bbox_2d": [
+          0.915,
+          0.119,
+          0.978,
+          0.176
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0003",
+        "category": "seating",
+        "description": "wooden sauna bench",
+        "bbox_2d": [
+          0.0,
+          0.598,
+          0.504,
+          1.0
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0004",
+        "category": "misc",
+        "description": "wooden sauna bench pad",
+        "bbox_2d": [
+          0.32,
+          0.718,
+          0.473,
+          0.851
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0005",
+        "category": "misc",
+        "description": "wall-mounted shower head",
+        "bbox_2d": [
+          0.912,
+          0.385,
+          0.953,
+          0.419
+        ],
+        "role": "observed"
+      }
+    ],
+    "layout": {
+      "room": {
+        "x_min": -2.338254690170288,
+        "x_max": 3.1196329593658447,
+        "floor_y": -2.3338898420333862,
+        "ceiling_y": 1.6182007789611816,
+        "z_min": -2.0,
+        "z_max": 3.502373218536377
+      },
+      "objects": [
+        {
+          "id": "observed_0000",
+          "center": [
+            0.04365071654319763,
+            -0.39699725806713104,
+            1.9305877685546875
+          ],
+          "size": [
+            0.5274844169616699,
+            1.3576578199863434,
+            1.8275394439697266
+          ],
+          "support": null
+        },
+        {
+          "id": "observed_0001",
+          "center": [
+            2.4457285404205322,
+            -0.6411713063716888,
+            2.7259838581085205
+          ],
+          "size": [
+            0.347808837890625,
+            1.6127174496650696,
+            0.5527787208557129
+          ],
+          "support": null
+        },
+        {
+          "id": "observed_0002",
+          "center": [
+            1.3611239194869995,
+            1.0793776512145996,
+            1.5287450551986694
+          ],
+          "size": [
+            0.1281437873840332,
+            0.07764625549316406,
+            0.1355762481689453
+          ],
+          "support": null
+        },
+        {
+          "id": "observed_0003",
+          "center": [
+            -1.023295283317566,
+            -1.4421731233596802,
+            1.666828989982605
+          ],
+          "size": [
+            1.6299188137054443,
+            0.7834334373474121,
+            1.2920653820037842
+          ],
+          "support": null
+        },
+        {
+          "id": "observed_0004",
+          "center": [
+            -0.43570852279663086,
+            -1.0294514894485474,
+            1.9118366241455078
+          ],
+          "size": [
+            0.5500478744506836,
+            0.13055825233459473,
+            0.9006819725036621
+          ],
+          "support": null
+        },
+        {
+          "id": "observed_0005",
+          "center": [
+            2.41973614692688,
+            0.5451326966285706,
+            2.788435459136963
+          ],
+          "size": [
+            0.11312437057495117,
+            0.14182376861572266,
+            0.22387933731079102
+          ],
+          "support": null
+        }
+      ]
+    }
+  },
+  "hallway": {
+    "program": {
+      "room_type": "hallway",
+      "scene_hypothesis": "A functional storage and utility area in the unobserved right part of the hallway.",
+      "groups": [
+        {
+          "id": "utility",
+          "region": "right",
+          "along_m": 2.5,
+          "clearance_m": 0.3,
+          "objects": [
+            {
+              "id": "new_cabinet",
+              "category": "cabinet",
+              "size": [
+                0.6,
+                0.9,
+                0.4
+              ],
+              "height_anchor_id": "observed_0008",
+              "height_alignment": "bottom",
+              "height_offset_m": 0.0,
+              "description": "wall-mounted cabinet for utilities",
+              "reason": "Provides storage for hallway essentials near the thermostat."
+            },
+            {
+              "id": "new_lighting",
+              "category": "lighting",
+              "size": [
+                0.1,
+                0.1,
+                0.1
+              ],
+              "anchor_id": "new_cabinet",
+              "direction": "above",
+              "gap_m": 0.1,
+              "vertical_alignment": "center",
+              "description": "small ceiling light above cabinet",
+              "reason": "Improves visibility of the utility area."
+            }
+          ]
+        }
+      ]
+    },
+    "observed": [
+      {
+        "id": "observed_0000",
+        "category": "door",
+        "description": "wooden door frame",
+        "bbox_2d": [
+          0.459,
+          0.276,
+          0.513,
+          0.82
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0001",
+        "category": "window",
+        "description": "horizontal blinds window",
+        "bbox_2d": [
+          0.788,
+          0.468,
+          0.892,
+          0.501
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0002",
+        "category": "lighting",
+        "description": "ceiling recessed light",
+        "bbox_2d": [
+          0.714,
+          0.238,
+          0.743,
+          0.261
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0003",
+        "category": "lighting",
+        "description": "ceiling recessed light",
+        "bbox_2d": [
+          0.672,
+          0.358,
+          0.694,
+          0.373
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0004",
+        "category": "lighting",
+        "description": "ceiling recessed light",
+        "bbox_2d": [
+          0.922,
+          0.346,
+          0.946,
+          0.362
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0005",
+        "category": "railing",
+        "description": "white wooden railing",
+        "bbox_2d": [
+          0.772,
+          0.611,
+          1.0,
+          0.999
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0006",
+        "category": "beam",
+        "description": "ceiling crown molding",
+        "bbox_2d": [
+          0.343,
+          0.0,
+          0.569,
+          0.377
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0007",
+        "category": "misc",
+        "description": "smoke detector device",
+        "bbox_2d": [
+          0.754,
+          0.056,
+          0.818,
+          0.113
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0008",
+        "category": "misc",
+        "description": "thermostat control panel",
+        "bbox_2d": [
+          0.915,
+          0.498,
+          0.953,
+          0.537
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0009",
+        "category": "stairs",
+        "description": "carpeted stairs landing",
+        "bbox_2d": [
+          0.443,
+          0.805,
+          0.845,
+          0.999
+        ],
+        "role": "observed"
+      }
+    ],
+    "layout": {
+      "room": {
+        "x_min": -2.0,
+        "x_max": 7.294933319091797,
+        "floor_y": -2.757357358932495,
+        "ceiling_y": 2.149897575378418,
+        "z_min": -2.0,
+        "z_max": 9.601337432861328
+      },
+      "objects": [
+        {
+          "id": "observed_0000",
+          "center": [
+            -0.08382052555680275,
+            -0.4744366407394409,
+            3.464534044265747
+          ],
+          "size": [
+            0.20805101841688156,
+            2.3511717319488525,
+            0.900324821472168
+          ],
+          "support": null
+        },
+        {
+          "id": "observed_0001",
+          "center": [
+            6.013091087341309,
+            0.258618101477623,
+            8.901586532592773
+          ],
+          "size": [
+            1.5636844635009766,
+            0.5475158989429474,
+            0.3995018005371094
+          ],
+          "support": null
+        },
+        {
+          "id": "observed_0002",
+          "center": [
+            1.2583882808685303,
+            1.376259684562683,
+            2.7335424423217773
+          ],
+          "size": [
+            0.13168549537658691,
+            0.02719902992248535,
+            0.13335704803466797
+          ],
+          "support": null
+        },
+        {
+          "id": "observed_0003",
+          "center": [
+            1.6688307523727417,
+            1.22671639919281,
+            4.543980121612549
+          ],
+          "size": [
+            0.16174697875976562,
+            0.06496047973632812,
+            0.1647167205810547
+          ],
+          "support": null
+        },
+        {
+          "id": "observed_0004",
+          "center": [
+            3.3766427040100098,
+            1.1341228485107422,
+            3.8738701343536377
+          ],
+          "size": [
+            0.1455388069152832,
+            0.023979902267456055,
+            0.14690876007080078
+          ],
+          "support": null
+        },
+        {
+          "id": "observed_0005",
+          "center": [
+            1.5471311807632446,
+            -1.5778663158416748,
+            2.1466429233551025
+          ],
+          "size": [
+            0.3092973232269287,
+            1.3589820861816406,
+            1.9991259574890137
+          ],
+          "support": null
+        },
+        {
+          "id": "observed_0006",
+          "center": [
+            0.13520723581314087,
+            1.4965516328811646,
+            3.082392930984497
+          ],
+          "size": [
+            0.9938932657241821,
+            0.30669188499450684,
+            5.074588298797607
+          ],
+          "support": null
+        },
+        {
+          "id": "observed_0007",
+          "center": [
+            0.9913355708122253,
+            1.4378937482833862,
+            1.7321453094482422
+          ],
+          "size": [
+            0.21460187435150146,
+            0.07493066787719727,
+            0.20083308219909668
+          ],
+          "support": null
+        },
+        {
+          "id": "observed_0008",
+          "center": [
+            3.8964205980300903,
+            -0.14853732287883759,
+            4.466170310974121
+          ],
+          "size": [
+            0.2603137493133545,
+            0.30320897698402405,
+            0.09994125366210938
+          ],
+          "support": null
+        },
+        {
+          "id": "observed_0009",
+          "center": [
+            0.5872494280338287,
+            -1.8597763776779175,
+            2.167335033416748
+          ],
+          "size": [
+            1.5304481387138367,
+            0.3585469722747803,
+            0.878964900970459
+          ],
+          "support": null
+        }
+      ]
+    }
+  }
+}

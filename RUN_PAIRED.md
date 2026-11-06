@@ -146,6 +146,21 @@ srun -p debug --nodelist=GPU3 --nodes=1 --ntasks=1 \
 
 全部下载完成后再次建立新 available 清单，实际候选上限为官方train 7523 / val925；质量筛选后的数量看报告。完整10359包含test1911，不能全部拿来训练又声称独立测试。历史全量训练checkpoint也不能充当未见这些测试建筑的公平基线。
 
+## 2026-10-20：6张图片、双卡检查点比较
+
+```bash
+cd /data-nfs/gpu1-2/u13529658780/DIT360
+sbatch qwen_edit_pano/scripts/select_paired_checkpoint.sh
+```
+
+两个数组任务最多同时使用两张GPU，每个任务1GPU/4CPU/96G内存/24小时。worker0运行epoch015/016/025、LoRA0.5；worker1运行相同epoch、LoRA0.75。固定seed0（每图片派生一次seed）、28steps、CFG4，共36张ERP，不进行多seed采样。两个任务可以位于同一节点或不同节点，实际并发由可用资源决定。
+
+复用此前6张室内验证图片（来自3栋建筑），清单为data/pano_checkpoint_val6_v1.jsonl；没有扩展为6栋。输出为outputs/checkpoint_selection_ARRAY_JOBID，日志pano-select_ARRAY_JOBID_TASKID.log。两卡完成后自动写review.html和COMPLETE.json，对比页每行是同一图片的Local、GT和六种设置。每次提交使用新目录，不覆盖已有结果。本轮聚焦三个微调检查点的选择；不额外重跑base。
+
+## 2026-10-13：续训检查简化
+
+训练配置中的 `source_hashes` 仅作来源记录，不再阻断续训；修改推理代码或注释后无需重训。模型、数据/缓存身份、训练参数和完整epoch检查点仍需匹配，配对训练报错会列出差异字段。源码语义是否保持兼容不再通过文件哈希强制判断。已用 paired_full_63637/checkpoint-epoch015 的真实配置完成CPU兼容性验证；未提交GPU作业。此前文档中“任意代码变化都会拒绝resume”的描述已被本规则替代。
+
 ## 2026-10-02：改用 sbatch 后台提交
 
 全量配对训练使用新增的 `scripts/train_paired_pano.sh`，不是旧的纯文本 `scripts/train_pano.sh`。提交后不依赖SSH连接；没有由助手提交任务。

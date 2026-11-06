@@ -1,0 +1,103 @@
+{
+  "source": "qwen_edit_pano/outputs/scm_world_val_living_run002/X7HyMhZNoso_d0468b580cd146778bae5e486bf3e50e",
+  "desk": {
+    "id": "scm_new_0005",
+    "azimuth_deg": 45.0,
+    "range_m": 4.0,
+    "size": [
+      0.9,
+      0.7,
+      0.6
+    ],
+    "center_y_m": -2.022,
+    "reason": "desk placed along the back wall near the right corner, off-camera at azimuth 45° and range 4.0m"
+  },
+  "chair_270": {
+    "id": "scm_new_0006",
+    "azimuth_deg": 270,
+    "range_m": 2.5,
+    "size": [
+      0.8,
+      0.6,
+      0.7
+    ],
+    "center_y_m": -1.9,
+    "reason": "Chair placed behind lamp (observed_0007) on the right wall, inferred from spatial continuity and furniture arrangement."
+  },
+  "wrong_support_ids": {
+    "objects": [
+      {
+        "id": "observed_0000",
+        "placement": "behind the sofa",
+        "support": {
+          "kind": "floor",
+          "target": null
+        }
+      },
+      {
+        "id": "observed_0001",
+        "placement": "behind the sofa",
+        "support": {
+          "kind": "floor",
+          "target": null
+        }
+      },
+      {
+        "id": "observed_0002",
+        "placement": "on the sofa",
+        "support": {
+          "kind": "object",
+          "target": "observed_0000"
+        }
+      },
+      {
+        "id": "observed_0003",
+        "placement": "on the sofa",
+        "support": {
+          "kind": "object",
+          "target": "observed_0000"
+        }
+      },
+      {
+        "id": "observed_0004",
+        "placement": "on the sofa",
+        "support": {
+          "kind": "object",
+          "target": "observed_0001"
+        }
+      },
+      {
+        "id": "observed_0005",
+        "placement": "on the sofa",
+        "support": {
+          "kind": "object",
+          "target": "observed_0001"
+        }
+      },
+      {
+        "id": "observed_0006",
+        "placement": "on the ottoman",
+        "support": {
+          "kind": "object",
+          "target": "observed_0008"
+        }
+      },
+      {
+        "id": "observed_0007",
+        "placement": "on the floor",
+        "support": {
+          "kind": "floor",
+          "target": null
+        }
+      },
+      {
+        "id": "observed_0008",
+        "placement": "on the floor",
+        "support": {
+          "kind": "floor",
+          "target": null
+        }
+      }
+    ]
+  }
+}

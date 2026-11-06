@@ -1,0 +1,53 @@
+category,path,bytes,reason
+A_regenerable,__pycache__,35704,Python bytecode only; source is retained
+A_regenerable,qwen_edit_pano/__pycache__,223281,Python bytecode only; source is retained
+A_regenerable,qwen_edit_pano/scripts/__pycache__,8432,Python bytecode only; source is retained
+A_regenerable,qwen_edit_pano/outputs/paired_smoke_val_v1/x8F5xyUWy9e_6bef4f99063f4b20afd28ea00190ac11/input.png,1273591,Failed old inference image; successful smoke_val_v2 exists; retain JSON diagnostics
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch001/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch002/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch003/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch004/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch005/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch006/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch007/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch008/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch009/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch010/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch011/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch012/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch013/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch014/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch016/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch017/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch018/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch019/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch020/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch021/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch022/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch023/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+B_lose_epoch_resume,qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch024/optimizer.bin,755380082,Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025
+C_archive_derived,qwen_edit_pano/outputs/analysis_scale03_comparison/01_stair_hall_all.jpg,548194,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/analysis_scale03_comparison/01_stair_hall_front.jpg,148188,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/analysis_scale03_comparison/02_living_room_all.jpg,533848,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/analysis_scale03_comparison/02_living_room_front.jpg,139942,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/analysis_scale03_comparison/03_spa_room_all.jpg,685444,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/analysis_scale03_comparison/03_spa_room_front.jpg,231681,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/analysis_scale03_comparison/04_indoor_bar_all.jpg,732561,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/analysis_scale03_comparison/04_indoor_bar_front.jpg,242293,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/analysis_scale03_comparison/05_bedroom_all.jpg,574847,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/analysis_scale03_comparison/05_bedroom_front.jpg,200307,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/analysis_scale03_comparison/06_living_room_all.jpg,571160,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/analysis_scale03_comparison/06_living_room_front.jpg,196797,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/comparison_epoch15_16_25_scale03_05/01_stair_hall.png,3983123,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/comparison_epoch15_16_25_scale03_05/02_living_room.png,4070165,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/comparison_epoch15_16_25_scale03_05/03_spa_room.png,4393440,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/comparison_epoch15_16_25_scale03_05/04_indoor_bar.png,4858220,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/comparison_epoch15_16_25_scale03_05/05_bedroom.png,4073539,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+C_archive_derived,qwen_edit_pano/outputs/comparison_epoch15_16_25_scale03_05/06_living_room.png,3938227,Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt
+D_archive_code_only,qwen_edit_pano/train.py,27460,Legacy text-only entry; paired benchmark does not use it; historical scripts/tests do. Archive as a coherent group only after validation
+D_archive_code_only,qwen_edit_pano/inference.py,11947,Legacy text-only entry; paired benchmark does not use it; historical scripts/tests do. Archive as a coherent group only after validation
+D_archive_code_only,qwen_edit_pano/cache_text.py,3421,Legacy text-only entry; paired benchmark does not use it; historical scripts/tests do. Archive as a coherent group only after validation
+D_archive_code_only,qwen_edit_pano/scripts/train_pano.sh,1686,Legacy text-only entry; paired benchmark does not use it; historical scripts/tests do. Archive as a coherent group only after validation
+D_archive_code_only,qwen_edit_pano/scripts/inference_pano.sh,1625,Legacy text-only entry; paired benchmark does not use it; historical scripts/tests do. Archive as a coherent group only after validation
+D_archive_code_only,qwen_edit_pano/scripts/cache_text.sh,1237,Legacy text-only entry; paired benchmark does not use it; historical scripts/tests do. Archive as a coherent group only after validation
+D_archive_code_only,qwen_edit_pano/scripts/smoke_test.sh,2084,Legacy text-only entry; paired benchmark does not use it; historical scripts/tests do. Archive as a coherent group only after validation

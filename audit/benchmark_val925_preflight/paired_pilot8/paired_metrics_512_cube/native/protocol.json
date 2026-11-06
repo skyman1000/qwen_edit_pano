@@ -1,0 +1,13 @@
+{
+  "size": 512,
+  "metrics": [
+    "lpips(alex,v0.1)",
+    "ssimc(RGB,no-downsample)",
+    "dists"
+  ],
+  "input": "RGB float32 [0,1]; FP32; no autocast",
+  "projection": "audited previous py360convert e2p; FOV90; bilinear; fixed faces; no alignment search",
+  "aggregation": "six faces arithmetic mean, plus per-face and five nonfront mean; not hidden-only",
+  "local": "fixed front versus actual Local RGB resized PIL bicubic; diagnostic only",
+  "no_world_state": true
+}

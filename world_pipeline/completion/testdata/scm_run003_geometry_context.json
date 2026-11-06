@@ -1,0 +1,956 @@
+{
+  "case": {
+    "context": [
+      {
+        "id": "observed_0000",
+        "category": "sofa",
+        "description": "gray sectional sofa with cushions",
+        "center": [
+          0.41746795177459717,
+          -1.4723962247371674,
+          1.9947726130485535
+        ],
+        "full_aabb_size": [
+          0.8749680519104004,
+          1.0992215275764465,
+          2.1596113443374634
+        ],
+        "visible_bbox_xyxy_norm": [
+          0.44,
+          0.663,
+          0.927,
+          1.0
+        ]
+      },
+      {
+        "id": "observed_0001",
+        "category": "sofa",
+        "description": "gray three-seater sofa",
+        "center": [
+          -1.7199454307556152,
+          -1.349098563194275,
+          3.6140962839126587
+        ],
+        "full_aabb_size": [
+          2.301313877105713,
+          0.9088277816772461,
+          1.136040449142456
+        ],
+        "visible_bbox_xyxy_norm": [
+          0.0,
+          0.605,
+          0.465,
+          0.798
+        ]
+      },
+      {
+        "id": "observed_0002",
+        "category": "cushion",
+        "description": "yellow patterned pillow",
+        "center": [
+          0.35308610647916794,
+          -1.1367017030715942,
+          1.2950624227523804
+        ],
+        "full_aabb_size": [
+          0.3262000232934952,
+          0.5523579120635986,
+          0.5776524543762207
+        ],
+        "visible_bbox_xyxy_norm": [
+          0.55,
+          0.805,
+          0.737,
+          1.0
+        ]
+      },
+      {
+        "id": "observed_0003",
+        "category": "cushion",
+        "description": "gray textured throw pillow",
+        "center": [
+          0.3607746362686157,
+          -1.1126550436019897,
+          1.7248231172561646
+        ],
+        "full_aabb_size": [
+          0.3220970630645752,
+          0.5064620971679688,
+          0.59269118309021
+        ],
+        "visible_bbox_xyxy_norm": [
+          0.543,
+          0.734,
+          0.677,
+          0.946
+        ]
+      },
+      {
+        "id": "observed_0004",
+        "category": "cushion",
+        "description": "yellow checkered decorative pillow",
+        "center": [
+          -3.010796308517456,
+          -1.1303571164608002,
+          3.9422115087509155
+        ],
+        "full_aabb_size": [
+          0.6490159034729004,
+          0.5077846646308899,
+          0.441509485244751
+        ],
+        "visible_bbox_xyxy_norm": [
+          0.065,
+          0.606,
+          0.168,
+          0.688
+        ]
+      },
+      {
+        "id": "observed_0005",
+        "category": "cushion",
+        "description": "black textured accent pillow",
+        "center": [
+          -2.4859418869018555,
+          -1.1037501096725464,
+          3.8709311485290527
+        ],
+        "full_aabb_size": [
+          0.6458492279052734,
+          0.4647023677825928,
+          0.4332857131958008
+        ],
+        "visible_bbox_xyxy_norm": [
+          0.125,
+          0.606,
+          0.23,
+          0.684
+        ]
+      },
+      {
+        "id": "observed_0006",
+        "category": "table",
+        "description": "white rectangular tray table",
+        "center": [
+          -1.881044626235962,
+          -1.53684663772583,
+          2.2787880897521973
+        ],
+        "full_aabb_size": [
+          0.8613123893737793,
+          0.19713664054870605,
+          0.767268180847168
+        ],
+        "visible_bbox_xyxy_norm": [
+          0.0,
+          0.787,
+          0.238,
+          0.913
+        ]
+      },
+      {
+        "id": "observed_0007",
+        "category": "lighting",
+        "description": "silver adjustable floor lamp",
+        "center": [
+          0.2593412399291992,
+          -0.6978009343147278,
+          3.4790213108062744
+        ],
+        "full_aabb_size": [
+          1.0083866119384766,
+          1.8613969087600708,
+          0.925788402557373
+        ],
+        "visible_bbox_xyxy_norm": [
+          0.469,
+          0.425,
+          0.601,
+          0.695
+        ]
+      },
+      {
+        "id": "observed_0008",
+        "category": "furniture",
+        "description": "blue woven ottoman",
+        "center": [
+          -2.1197309494018555,
+          -1.816621720790863,
+          2.2955338954925537
+        ],
+        "full_aabb_size": [
+          1.627105712890625,
+          0.5884686708450317,
+          1.1164631843566895
+        ],
+        "visible_bbox_xyxy_norm": [
+          0.0,
+          0.799,
+          0.3,
+          1.0
+        ]
+      }
+    ],
+    "hfov": 90.0,
+    "image_size": [
+      1024,
+      1024
+    ]
+  },
+  "observed": {
+    "schema_version": "caupano.local_world.v0.1-pilot1",
+    "frame": "local_view_x_right_y_image_up_z_forward_metres",
+    "id": "single_image",
+    "split": "inference",
+    "stage": "prediction",
+    "scope": "observed",
+    "vocabulary_sha256": "2425968dff3307478803bc0387ae39c4e7e57a46f02fd2f848340f1d2fc45d38",
+    "objects": [
+      {
+        "track_id": "observed_0000",
+        "description": "gray sectional sofa with cushions",
+        "category_id": {
+          "value": 10,
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "existing_canonical_vocabulary",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "center_local_m": {
+          "value": [
+            0.41746795177459717,
+            -1.4723962247371674,
+            1.9947726130485535
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_camera_aabb_center",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "size_aabb_local_m": {
+          "value": [
+            0.8749680519104004,
+            1.0992215275764465,
+            2.1596113443374634
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_corner_max_minus_min",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "bbox2d_visible_xyxy_norm": {
+          "value": [
+            0.44,
+            0.663,
+            0.927,
+            1.0
+          ],
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "visible_grounding",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "in_primary_room": {
+          "value": null,
+          "valid": false,
+          "source": "unknown",
+          "method": null,
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": "room_is_a_hypothesis"
+        },
+        "local_evidence": "visible",
+        "completion_role": "observed",
+        "unseen_reason": null,
+        "reason": null,
+        "layout_parameters": {},
+        "geometry_quality": "hypothesized_not_reconstructed"
+      },
+      {
+        "track_id": "observed_0001",
+        "description": "gray three-seater sofa",
+        "category_id": {
+          "value": 10,
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "existing_canonical_vocabulary",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "center_local_m": {
+          "value": [
+            -1.7199454307556152,
+            -1.349098563194275,
+            3.6140962839126587
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_camera_aabb_center",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "size_aabb_local_m": {
+          "value": [
+            2.301313877105713,
+            0.9088277816772461,
+            1.136040449142456
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_corner_max_minus_min",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "bbox2d_visible_xyxy_norm": {
+          "value": [
+            0.0,
+            0.605,
+            0.465,
+            0.798
+          ],
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "visible_grounding",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "in_primary_room": {
+          "value": null,
+          "valid": false,
+          "source": "unknown",
+          "method": null,
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": "room_is_a_hypothesis"
+        },
+        "local_evidence": "visible",
+        "completion_role": "observed",
+        "unseen_reason": null,
+        "reason": null,
+        "layout_parameters": {},
+        "geometry_quality": "hypothesized_not_reconstructed"
+      },
+      {
+        "track_id": "observed_0002",
+        "description": "yellow patterned pillow",
+        "category_id": {
+          "value": 8,
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "existing_canonical_vocabulary",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "center_local_m": {
+          "value": [
+            0.35308610647916794,
+            -1.1367017030715942,
+            1.2950624227523804
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_camera_aabb_center",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "size_aabb_local_m": {
+          "value": [
+            0.3262000232934952,
+            0.5523579120635986,
+            0.5776524543762207
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_corner_max_minus_min",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "bbox2d_visible_xyxy_norm": {
+          "value": [
+            0.55,
+            0.805,
+            0.737,
+            1.0
+          ],
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "visible_grounding",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "in_primary_room": {
+          "value": null,
+          "valid": false,
+          "source": "unknown",
+          "method": null,
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": "room_is_a_hypothesis"
+        },
+        "local_evidence": "visible",
+        "completion_role": "observed",
+        "unseen_reason": null,
+        "reason": null,
+        "layout_parameters": {},
+        "geometry_quality": "hypothesized_not_reconstructed"
+      },
+      {
+        "track_id": "observed_0003",
+        "description": "gray textured throw pillow",
+        "category_id": {
+          "value": 8,
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "existing_canonical_vocabulary",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "center_local_m": {
+          "value": [
+            0.3607746362686157,
+            -1.1126550436019897,
+            1.7248231172561646
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_camera_aabb_center",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "size_aabb_local_m": {
+          "value": [
+            0.3220970630645752,
+            0.5064620971679688,
+            0.59269118309021
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_corner_max_minus_min",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "bbox2d_visible_xyxy_norm": {
+          "value": [
+            0.543,
+            0.734,
+            0.677,
+            0.946
+          ],
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "visible_grounding",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "in_primary_room": {
+          "value": null,
+          "valid": false,
+          "source": "unknown",
+          "method": null,
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": "room_is_a_hypothesis"
+        },
+        "local_evidence": "visible",
+        "completion_role": "observed",
+        "unseen_reason": null,
+        "reason": null,
+        "layout_parameters": {},
+        "geometry_quality": "hypothesized_not_reconstructed"
+      },
+      {
+        "track_id": "observed_0004",
+        "description": "yellow checkered decorative pillow",
+        "category_id": {
+          "value": 8,
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "existing_canonical_vocabulary",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "center_local_m": {
+          "value": [
+            -3.010796308517456,
+            -1.1303571164608002,
+            3.9422115087509155
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_camera_aabb_center",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "size_aabb_local_m": {
+          "value": [
+            0.6490159034729004,
+            0.5077846646308899,
+            0.441509485244751
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_corner_max_minus_min",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "bbox2d_visible_xyxy_norm": {
+          "value": [
+            0.065,
+            0.606,
+            0.168,
+            0.688
+          ],
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "visible_grounding",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "in_primary_room": {
+          "value": null,
+          "valid": false,
+          "source": "unknown",
+          "method": null,
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": "room_is_a_hypothesis"
+        },
+        "local_evidence": "visible",
+        "completion_role": "observed",
+        "unseen_reason": null,
+        "reason": null,
+        "layout_parameters": {},
+        "geometry_quality": "hypothesized_not_reconstructed"
+      },
+      {
+        "track_id": "observed_0005",
+        "description": "black textured accent pillow",
+        "category_id": {
+          "value": 8,
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "existing_canonical_vocabulary",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "center_local_m": {
+          "value": [
+            -2.4859418869018555,
+            -1.1037501096725464,
+            3.8709311485290527
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_camera_aabb_center",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "size_aabb_local_m": {
+          "value": [
+            0.6458492279052734,
+            0.4647023677825928,
+            0.4332857131958008
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_corner_max_minus_min",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "bbox2d_visible_xyxy_norm": {
+          "value": [
+            0.125,
+            0.606,
+            0.23,
+            0.684
+          ],
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "visible_grounding",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "in_primary_room": {
+          "value": null,
+          "valid": false,
+          "source": "unknown",
+          "method": null,
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": "room_is_a_hypothesis"
+        },
+        "local_evidence": "visible",
+        "completion_role": "observed",
+        "unseen_reason": null,
+        "reason": null,
+        "layout_parameters": {},
+        "geometry_quality": "hypothesized_not_reconstructed"
+      },
+      {
+        "track_id": "observed_0006",
+        "description": "white rectangular tray table",
+        "category_id": {
+          "value": 5,
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "existing_canonical_vocabulary",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "center_local_m": {
+          "value": [
+            -1.881044626235962,
+            -1.53684663772583,
+            2.2787880897521973
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_camera_aabb_center",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "size_aabb_local_m": {
+          "value": [
+            0.8613123893737793,
+            0.19713664054870605,
+            0.767268180847168
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_corner_max_minus_min",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "bbox2d_visible_xyxy_norm": {
+          "value": [
+            0.0,
+            0.787,
+            0.238,
+            0.913
+          ],
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "visible_grounding",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "in_primary_room": {
+          "value": null,
+          "valid": false,
+          "source": "unknown",
+          "method": null,
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": "room_is_a_hypothesis"
+        },
+        "local_evidence": "visible",
+        "completion_role": "observed",
+        "unseen_reason": null,
+        "reason": null,
+        "layout_parameters": {},
+        "geometry_quality": "hypothesized_not_reconstructed"
+      },
+      {
+        "track_id": "observed_0007",
+        "description": "silver adjustable floor lamp",
+        "category_id": {
+          "value": 28,
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "existing_canonical_vocabulary",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "center_local_m": {
+          "value": [
+            0.2593412399291992,
+            -0.6978009343147278,
+            3.4790213108062744
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_camera_aabb_center",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "size_aabb_local_m": {
+          "value": [
+            1.0083866119384766,
+            1.8613969087600708,
+            0.925788402557373
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_corner_max_minus_min",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "bbox2d_visible_xyxy_norm": {
+          "value": [
+            0.469,
+            0.425,
+            0.601,
+            0.695
+          ],
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "visible_grounding",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "in_primary_room": {
+          "value": null,
+          "valid": false,
+          "source": "unknown",
+          "method": null,
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": "room_is_a_hypothesis"
+        },
+        "local_evidence": "visible",
+        "completion_role": "observed",
+        "unseen_reason": null,
+        "reason": null,
+        "layout_parameters": {},
+        "geometry_quality": "hypothesized_not_reconstructed"
+      },
+      {
+        "track_id": "observed_0008",
+        "description": "blue woven ottoman",
+        "category_id": {
+          "value": 36,
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "existing_canonical_vocabulary",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "center_local_m": {
+          "value": [
+            -2.1197309494018555,
+            -1.816621720790863,
+            2.2955338954925537
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_camera_aabb_center",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "size_aabb_local_m": {
+          "value": [
+            1.627105712890625,
+            0.5884686708450317,
+            1.1164631843566895
+          ],
+          "valid": true,
+          "source": "model_prediction",
+          "method": "wilddet3d_corner_max_minus_min",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "bbox2d_visible_xyxy_norm": {
+          "value": [
+            0.0,
+            0.799,
+            0.3,
+            1.0
+          ],
+          "valid": true,
+          "source": "qwen_semantic_prediction",
+          "method": "visible_grounding",
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": null
+        },
+        "in_primary_room": {
+          "value": null,
+          "valid": false,
+          "source": "unknown",
+          "method": null,
+          "confidence": null,
+          "confidence_kind": null,
+          "unknown_reason": "room_is_a_hypothesis"
+        },
+        "local_evidence": "visible",
+        "completion_role": "observed",
+        "unseen_reason": null,
+        "reason": null,
+        "layout_parameters": {},
+        "geometry_quality": "hypothesized_not_reconstructed"
+      }
+    ],
+    "relations": [],
+    "ready_for_training": false,
+    "quality_status": "requires_visual_review",
+    "room_hypothesis": {
+      "x_min": -3.8353042602539062,
+      "x_max": 2.0,
+      "floor_y": -2.610856056213379,
+      "ceiling_y": 1.2,
+      "z_min": -2.0,
+      "z_max": 4.682116508483887
+    },
+    "observer": "qwen_2d_plus_wilddet3d_geometric",
+    "room_hypothesis_method": "display_envelope_only_not_room_reconstruction",
+    "camera_geometry": {
+      "levelled": false,
+      "gravity_verified": false,
+      "floor_verified": false
+    },
+    "observation_geometry_verified": false
+  },
+  "plane": {
+    "kind": "camera_Y_level_prior_from_predicted_object_bases",
+    "anchor_ids": [
+      "observed_0000",
+      "observed_0001",
+      "observed_0008"
+    ],
+    "base_y_values_m": [
+      -2.0220069885253906,
+      -1.803512454032898,
+      -2.110856056213379
+    ],
+    "floor_y_m": -2.0220069885253906,
+    "base_spread_m": 0.30734360218048096,
+    "gravity_measured": false,
+    "floor_measured": false,
+    "assumption": "camera_Y_approximates_vertical_for_this_hypothesis",
+    "floor_uncertainty": "observer_error_and_unmeasured_camera_tilt_not_calibrated"
+  },
+  "plan": {
+    "id": "sample_4408",
+    "scene_type": "hypothesized indoor world",
+    "scene_hypothesis": "Sampled background: cozy living; sampled furnishing configuration: corner nook",
+    "additions": [
+      {
+        "id": "scm_new_0001",
+        "name": "couch (1)",
+        "object_type": "couch",
+        "reason": "Externally sampled outside-count instance under the declared generative semantic model.",
+        "placement": "Outside the original input frustum; geometry pending.",
+        "support": {
+          "kind": "unspecified",
+          "target": null
+        }
+      },
+      {
+        "id": "scm_new_0002",
+        "name": "table (1)",
+        "object_type": "table",
+        "reason": "Externally sampled outside-count instance under the declared generative semantic model.",
+        "placement": "Outside the original input frustum; geometry pending.",
+        "support": {
+          "kind": "unspecified",
+          "target": null
+        }
+      },
+      {
+        "id": "scm_new_0003",
+        "name": "chair (1)",
+        "object_type": "chair",
+        "reason": "Externally sampled outside-count instance under the declared generative semantic model.",
+        "placement": "Outside the original input frustum; geometry pending.",
+        "support": {
+          "kind": "unspecified",
+          "target": null
+        }
+      },
+      {
+        "id": "scm_new_0004",
+        "name": "chair (2)",
+        "object_type": "chair",
+        "reason": "Externally sampled outside-count instance under the declared generative semantic model.",
+        "placement": "Outside the original input frustum; geometry pending.",
+        "support": {
+          "kind": "unspecified",
+          "target": null
+        }
+      },
+      {
+        "id": "scm_new_0005",
+        "name": "monitor (1)",
+        "object_type": "monitor",
+        "reason": "Externally sampled outside-count instance under the declared generative semantic model.",
+        "placement": "Outside the original input frustum; geometry pending.",
+        "support": {
+          "kind": "unspecified",
+          "target": null
+        }
+      },
+      {
+        "id": "scm_new_0006",
+        "name": "monitor (2)",
+        "object_type": "monitor",
+        "reason": "Externally sampled outside-count instance under the declared generative semantic model.",
+        "placement": "Outside the original input frustum; geometry pending.",
+        "support": {
+          "kind": "unspecified",
+          "target": null
+        }
+      },
+      {
+        "id": "scm_new_0007",
+        "name": "cushion (1)",
+        "object_type": "cushion",
+        "reason": "Externally sampled outside-count instance under the declared generative semantic model.",
+        "placement": "Outside the original input frustum; geometry pending.",
+        "support": {
+          "kind": "unspecified",
+          "target": null
+        }
+      }
+    ],
+    "relations": [],
+    "placement_dependency_order": [
+      "scm_new_0001",
+      "scm_new_0002",
+      "scm_new_0003",
+      "scm_new_0004",
+      "scm_new_0005",
+      "scm_new_0006",
+      "scm_new_0007"
+    ],
+    "semantic_selection_source": "external_posterior_count_sampler_not_LM_inventory_selection"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "source": "qwen_edit_pano/outputs/scm_world_val_living_run003/X7HyMhZNoso_d0468b580cd146778bae5e486bf3e50e",
+  "records": [
+    {
+      "world": "hypothesis_01",
+      "order": {
+        "name": "table (1)",
+        "id": "scm_new_0001"
+      },
+      "support": {
+        "description": "standing directly on the floor",
+        "kind": "floor",
+        "target": null
+      },
+      "body": {
+        "azimuth_deg": 45.0,
+        "range_m": 3.5,
+        "size": [
+          0.6,
+          0.4,
+          0.6
+        ],
+        "center_y_m": -0.1
+      }
+    },
+    {
+      "world": "hypothesis_02",
+      "order": {
+        "name": "cushion (1)",
+        "id": "scm_new_0007"
+      },
+      "support": {
+        "description": "supported on top of gray sectional sofa with cushions",
+        "kind": "object",
+        "target": "observed_0000"
+      },
+      "body": {
+        "azimuth_deg": 30,
+        "range_m": 2.5,
+        "size": [
+          0.35,
+          0.4,
+          0.45
+        ],
+        "center_y_m": 0.1
+      }
+    },
+    {
+      "world": "hypothesis_03",
+      "order": {
+        "name": "couch (2)",
+        "id": "scm_new_0002"
+      },
+      "support": {
+        "description": "standing directly on the floor",
+        "kind": "floor",
+        "target": null
+      },
+      "body": {
+        "azimuth_deg": 315,
+        "range_m": 3.2,
+        "size": [
+          0.9,
+          0.7,
+          1.8
+        ],
+        "center_y_m": 0.1
+      }
+    }
+  ]
+}

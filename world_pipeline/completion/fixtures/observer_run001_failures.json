@@ -1,0 +1,104 @@
+{
+  "source_run": "qwen_edit_pano/outputs/qwen_upstream_val12_run001/observer",
+  "window_query_without_repeated_category": [
+    {
+      "category": "window",
+      "bbox_2d": [
+        85,
+        444,
+        170,
+        546
+      ],
+      "description": "circular window with blue illumination on the back wall"
+    },
+    {
+      "bbox_2d": [
+        304,
+        433,
+        412,
+        550
+      ],
+      "description": "circular window with blue illumination on the back wall"
+    }
+  ],
+  "repeated_box": {
+    "bbox_2d": [
+      268,
+      517,
+      305,
+      540
+    ],
+    "description": "roll of paper towel on counter"
+  },
+  "out_of_range_box": [
+    252,
+    9292,
+    357,
+    9342
+  ],
+  "failures": [
+    {
+      "id": "8194nk5LbLH_2393bffb53fe4205bcc67796c6fb76e3",
+      "status": {
+        "status": "failed",
+        "error": "Token limit reached; inspect qwen_edit_pano/outputs/qwen_upstream_val12_run001/observer/8194nk5LbLH_2393bffb53fe4205bcc67796c6fb76e3/instances.txt, increase --max-new-tokens if needed"
+      },
+      "characters": 25282,
+      "tail": " sky.\"},{\"category\":\"window\",\"bbox_2d\":[252,9392,357,9442],\"description\":\"large glass windows on a modern building, reflecting sky.\"},{\"category\":\"window\",\"bbox_2d\":[252,9442,357,9492],\"description\":\"large glass windows on a modern building, reflecting sky.\"},{\"category\":\"window\",\"bbox_2d\":[252,9492"
+    },
+    {
+      "id": "8194nk5LbLH_9bdde31adaa1443bb206b09bfa3c474c",
+      "status": {
+        "status": "failed",
+        "error": "Token limit reached; inspect qwen_edit_pano/outputs/qwen_upstream_val12_run001/observer/8194nk5LbLH_9bdde31adaa1443bb206b09bfa3c474c/instances.txt, increase --max-new-tokens if needed"
+      },
+      "characters": 23483,
+      "tail": ",763,17],\"description\":\"white board panel with writing on it\"},{\"bbox_2d\":[730,0,763,17],\"description\":\"white board panel with writing on it\"},{\"bbox_2d\":[730,0,763,17],\"description\":\"white board panel with writing on it\"},{\"bbox_2d\":[730,0,763,17],\"description\":\"white board panel with writing on it"
+    },
+    {
+      "id": "8194nk5LbLH_ae91518ed77047b3bdeeca864cd04029",
+      "status": {
+        "status": "failed",
+        "error": "Token limit reached; inspect qwen_edit_pano/outputs/qwen_upstream_val12_run001/observer/8194nk5LbLH_ae91518ed77047b3bdeeca864cd04029/instances.txt, increase --max-new-tokens if needed"
+      },
+      "characters": 21097,
+      "tail": "ter\"},{\"bbox_2d\":[268,517,305,540],\"description\":\"roll of paper towel on counter\"},{\"bbox_2d\":[268,517,305,540],\"description\":\"roll of paper towel on counter\"},{\"bbox_2d\":[268,517,305,540],\"description\":\"roll of paper towel on counter\"},{\"bbox_2d\":[268,517,305,540],\"description\":\"roll of paper towel"
+    },
+    {
+      "id": "x8F5xyUWy9e_03de84eb12c24a93bdfd88e46a6db25a",
+      "status": {
+        "status": "failed",
+        "error": "'category'"
+      },
+      "characters": 1156,
+      "tail": "ox_2d\":[447,539,475,570],\"description\":\"person sitting in the background\"},{\"bbox_2d\":[420,423,505,592],\"description\":\"blue and white patterned tile wall\"},{\"bbox_2d\":[0,127,527,394],\"description\":\"curved ceiling light fixture\"},{\"bbox_2d\":[0,657,56,742],\"description\":\"white cushion on the bench\"}]}"
+    },
+    {
+      "id": "x8F5xyUWy9e_ca2525d9ecd14dba84c49be763f20adb",
+      "status": {
+        "status": "failed",
+        "error": "'category'"
+      },
+      "characters": 1207,
+      "tail": "},{\"bbox_2d\":[456,373,480,383],\"description\":\"recessed ceiling light with blue glow\"},{\"category\":\"objects\",\"bbox_2d\":[419,545,507,640],\"description\":\"decorative rocks and a small plant near the pool edge\"},{\"bbox_2d\":[559,873,607,912],\"description\":\"small decorative object on the poolside floor\"}]}"
+    },
+    {
+      "id": "zsNo4HB9uLZ_ead481533f834704bd489d3d44b6a03a",
+      "status": {
+        "status": "failed",
+        "error": "Token limit reached; inspect qwen_edit_pano/outputs/qwen_upstream_val12_run001/observer/zsNo4HB9uLZ_ead481533f834704bd489d3d44b6a03a/instances.txt, increase --max-new-tokens if needed"
+      },
+      "characters": 21689,
+      "tail": "ack cushions on bed\"},{\"bbox_2d\":[543,578,633,664],\"description\":\"orange and black cushions on bed\"},{\"bbox_2d\":[543,578,633,664],\"description\":\"orange and black cushions on bed\"},{\"bbox_2d\":[543,578,633,664],\"description\":\"orange and black cushions on bed\"},{\"bbox_2d\":[543,578,633,664],\"description"
+    },
+    {
+      "id": "zsNo4HB9uLZ_ed8645386a0a4de2bfc486e0a1d02468",
+      "status": {
+        "status": "failed",
+        "error": "'category'"
+      },
+      "characters": 1130,
+      "tail": "de table\"},{\"bbox_2d\":[0,450,80,595],\"description\":\"tall potted plant in corner with thin leaves\"},{\"bbox_2d\":[944,492,1000,687],\"description\":\"side lamp with woven shade on right side\"},{\"bbox_2d\":[242,647,262,700],\"description\":\"small black object on side table (possibly remote or small decor)\"}]}"
+    }
+  ]
+}

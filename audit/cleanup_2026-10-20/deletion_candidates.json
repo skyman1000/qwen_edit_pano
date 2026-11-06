@@ -1,0 +1,343 @@
+{
+  "date": "2026-10-20",
+  "files_deleted": 0,
+  "scope": "Panorama implementation and derived panels only; World work protected",
+  "candidates": [
+    {
+      "category": "A_regenerable",
+      "path": "__pycache__",
+      "bytes": 35704,
+      "reason": "Python bytecode only; source is retained"
+    },
+    {
+      "category": "A_regenerable",
+      "path": "qwen_edit_pano/__pycache__",
+      "bytes": 223281,
+      "reason": "Python bytecode only; source is retained"
+    },
+    {
+      "category": "A_regenerable",
+      "path": "qwen_edit_pano/scripts/__pycache__",
+      "bytes": 8432,
+      "reason": "Python bytecode only; source is retained"
+    },
+    {
+      "category": "A_regenerable",
+      "path": "qwen_edit_pano/outputs/paired_smoke_val_v1/x8F5xyUWy9e_6bef4f99063f4b20afd28ea00190ac11/input.png",
+      "bytes": 1273591,
+      "reason": "Failed old inference image; successful smoke_val_v2 exists; retain JSON diagnostics"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch001/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch002/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch003/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch004/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch005/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch006/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch007/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch008/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch009/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch010/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch011/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch012/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch013/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch014/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch016/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch017/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch018/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch019/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch020/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch021/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch022/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch023/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "B_lose_epoch_resume",
+      "path": "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch024/optimizer.bin",
+      "bytes": 755380082,
+      "reason": "Conditional: loses exact resume from this epoch; retain LoRA weights/configs; preserve complete epoch015 and025"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/analysis_scale03_comparison/01_stair_hall_all.jpg",
+      "bytes": 548194,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/analysis_scale03_comparison/01_stair_hall_front.jpg",
+      "bytes": 148188,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/analysis_scale03_comparison/02_living_room_all.jpg",
+      "bytes": 533848,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/analysis_scale03_comparison/02_living_room_front.jpg",
+      "bytes": 139942,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/analysis_scale03_comparison/03_spa_room_all.jpg",
+      "bytes": 685444,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/analysis_scale03_comparison/03_spa_room_front.jpg",
+      "bytes": 231681,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/analysis_scale03_comparison/04_indoor_bar_all.jpg",
+      "bytes": 732561,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/analysis_scale03_comparison/04_indoor_bar_front.jpg",
+      "bytes": 242293,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/analysis_scale03_comparison/05_bedroom_all.jpg",
+      "bytes": 574847,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/analysis_scale03_comparison/05_bedroom_front.jpg",
+      "bytes": 200307,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/analysis_scale03_comparison/06_living_room_all.jpg",
+      "bytes": 571160,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/analysis_scale03_comparison/06_living_room_front.jpg",
+      "bytes": 196797,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/comparison_epoch15_16_25_scale03_05/01_stair_hall.png",
+      "bytes": 3983123,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/comparison_epoch15_16_25_scale03_05/02_living_room.png",
+      "bytes": 4070165,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/comparison_epoch15_16_25_scale03_05/03_spa_room.png",
+      "bytes": 4393440,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/comparison_epoch15_16_25_scale03_05/04_indoor_bar.png",
+      "bytes": 4858220,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/comparison_epoch15_16_25_scale03_05/05_bedroom.png",
+      "bytes": 4073539,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "C_archive_derived",
+      "path": "qwen_edit_pano/outputs/comparison_epoch15_16_25_scale03_05/06_living_room.png",
+      "bytes": 3938227,
+      "reason": "Old derived comparison panel; rebuild from retained source PNGs; deleting breaks old gallery until rebuilt"
+    },
+    {
+      "category": "D_archive_code_only",
+      "path": "qwen_edit_pano/train.py",
+      "bytes": 27460,
+      "reason": "Legacy text-only entry; paired benchmark does not use it; historical scripts/tests do. Archive as a coherent group only after validation"
+    },
+    {
+      "category": "D_archive_code_only",
+      "path": "qwen_edit_pano/inference.py",
+      "bytes": 11947,
+      "reason": "Legacy text-only entry; paired benchmark does not use it; historical scripts/tests do. Archive as a coherent group only after validation"
+    },
+    {
+      "category": "D_archive_code_only",
+      "path": "qwen_edit_pano/cache_text.py",
+      "bytes": 3421,
+      "reason": "Legacy text-only entry; paired benchmark does not use it; historical scripts/tests do. Archive as a coherent group only after validation"
+    },
+    {
+      "category": "D_archive_code_only",
+      "path": "qwen_edit_pano/scripts/train_pano.sh",
+      "bytes": 1686,
+      "reason": "Legacy text-only entry; paired benchmark does not use it; historical scripts/tests do. Archive as a coherent group only after validation"
+    },
+    {
+      "category": "D_archive_code_only",
+      "path": "qwen_edit_pano/scripts/inference_pano.sh",
+      "bytes": 1625,
+      "reason": "Legacy text-only entry; paired benchmark does not use it; historical scripts/tests do. Archive as a coherent group only after validation"
+    },
+    {
+      "category": "D_archive_code_only",
+      "path": "qwen_edit_pano/scripts/cache_text.sh",
+      "bytes": 1237,
+      "reason": "Legacy text-only entry; paired benchmark does not use it; historical scripts/tests do. Archive as a coherent group only after validation"
+    },
+    {
+      "category": "D_archive_code_only",
+      "path": "qwen_edit_pano/scripts/smoke_test.sh",
+      "bytes": 2084,
+      "reason": "Legacy text-only entry; paired benchmark does not use it; historical scripts/tests do. Archive as a coherent group only after validation"
+    }
+  ],
+  "category_bytes": {
+    "A_regenerable": 1541008,
+    "B_lose_epoch_resume": 17373741886,
+    "C_archive_derived": 30121976,
+    "D_archive_code_only": 49460
+  },
+  "protected": [
+    "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch015 (entire directory)",
+    "qwen_edit_pano/outputs/paired_full_63637/checkpoint-epoch025 (entire directory)",
+    "All other checkpoint LoRA files/configs, training_config.json, parameter_report.json, train_log.jsonl",
+    "qwen_edit_pano/outputs/comparison_epoch15_25_scale05 (includes new 8 images, source runs and current review)",
+    "qwen_edit_pano/outputs/checkpoint_selection_70218 (current comparison sources)",
+    "qwen_edit_pano/outputs/paired_val_epoch015_scale03, paired_val_epoch016_scale03, paired_val_epoch025_scale03",
+    "qwen_edit_pano/outputs/pano_epoch_scale_v1 (historical ablation evidence and source references)",
+    "qwen_edit_pano/outputs/native_vs_pano_epoch015_scale05_val925_v1 (new benchmark)",
+    "qwen_edit_pano/data, qwen_edit_pano/cache/paired_full_v1, benchmark_assets",
+    "qwen_pano (entire old implementation/outputs/cache)",
+    "qwen_edit_pano/world_pipeline, third_party, all World/Observer/Completion outputs and their datasets/checkpoints",
+    "research (including compatibility symlink research/world_pipeline)",
+    "HuggingFace model snapshots and polished Arrow sources outside project (not disposable cache)",
+    "Active jobs 70260/id-A and70261/id-B on GPU2 and all their assets; recheck before any future deletion",
+    "paired_pipeline.py, paired_circular.py, circular.py, losses.py, common.py and other shared imports"
+  ],
+  "note": "Logical file sizes; candidates are not a deletion authorization. B/C/D have explicit costs. No broad rm script generated."
+}

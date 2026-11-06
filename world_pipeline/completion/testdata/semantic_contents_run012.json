@@ -1,0 +1,34 @@
+{
+  "room_type": "bedroom",
+  "scene_hypothesis": "A modern, minimalist bedroom with a large bed centered against a gray accent wall, flanked by two nightstands. The room features recessed ceiling lights, a ventilation grille, and two framed artworks above the bed. A window with black blinds is on the left wall. The floor is carpeted in a light beige tone. The visible side of the room includes a partial view of a white wall or column framing the shot.",
+  "additions": [
+    {
+      "id": "new_01",
+      "category": "door",
+      "description": "sliding door with frosted glass panel for privacy, leading to an adjacent closet or hallway",
+      "reason": "To complete the room’s layout by providing access to storage or other areas, typical in bedrooms.",
+      "placement_intent": "on the left wall, partially obscured by the foreground column, aligned with the window's height range"
+    },
+    {
+      "id": "new_02",
+      "category": "curtain",
+      "description": "black blackout curtain panels hanging from a rod above the window, matching the window frame color",
+      "reason": "To provide light control and privacy, complementing the existing black blinds and enhancing the room’s cohesive dark accent theme.",
+      "placement_intent": "hanging from a rod positioned directly above the window, covering the entire window opening"
+    },
+    {
+      "id": "new_03",
+      "category": "chair",
+      "description": "low-profile upholstered chair with dark fabric, placed near the foot of the bed for reading or sitting",
+      "reason": "To add functional seating near the bed without obstructing the space, common in bedrooms for convenience.",
+      "placement_intent": "positioned to the right of the bed, facing the headboard, with its back against the gray wall"
+    },
+    {
+      "id": "new_04",
+      "category": "plant",
+      "description": "small potted snake plant on the left nightstand, adding a touch of greenery",
+      "reason": "To introduce natural elements and soften the room’s aesthetic while maintaining the minimalist style.",
+      "placement_intent": "placed on the left nightstand, next to the lamp, at a height consistent with the table surface"
+    }
+  ]
+}

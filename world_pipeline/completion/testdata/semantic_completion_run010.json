@@ -1,0 +1,47 @@
+{
+  "room_type": "bedroom",
+  "additions": [
+    {
+      "id": "new_01",
+      "category": "chair",
+      "description": "small reading chair near window",
+      "azimuth_deg": -45,
+      "distance_m": 3.8,
+      "bottom_height_m": 0,
+      "size": [
+        0.6,
+        0.7,
+        0.6
+      ],
+      "reason": "adds seating for reading near natural light from window"
+    },
+    {
+      "id": "new_02",
+      "category": "plant",
+      "description": "small potted plant on floor",
+      "azimuth_deg": 90,
+      "distance_m": 2.8,
+      "bottom_height_m": 0,
+      "size": [
+        0.3,
+        0.4,
+        0.3
+      ],
+      "reason": "adds greenery and softens room's modern aesthetic"
+    },
+    {
+      "id": "new_03",
+      "category": "cabinet",
+      "description": "slim wall-mounted cabinet above bed",
+      "azimuth_deg": 0,
+      "distance_m": 2.0,
+      "bottom_height_m": 1.8,
+      "size": [
+        0.3,
+        0.6,
+        0.4
+      ],
+      "reason": "provides storage without cluttering the space above bed"
+    }
+  ]
+}

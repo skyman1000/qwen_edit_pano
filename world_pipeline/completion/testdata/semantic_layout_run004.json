@@ -1,0 +1,734 @@
+{
+  "note": "Actual failed Qwen coarse layout; mixed coordinates and invalid proposed room, 2026-10-18.",
+  "answer": {
+    "room": {
+      "x_min": -0.5,
+      "x_max": 1.5,
+      "floor_y": 0.8,
+      "ceiling_y": 2.6,
+      "z_min": 0.0,
+      "z_max": 4.5
+    },
+    "objects": [
+      {
+        "id": "observed_0000",
+        "center": [
+          0.7,
+          0.7,
+          3.8
+        ],
+        "size": [
+          1.9,
+          0.6,
+          1.7
+        ],
+        "support": "floor"
+      },
+      {
+        "id": "observed_0001",
+        "center": [
+          0.4,
+          0.1,
+          4.8
+        ],
+        "size": [
+          0.15,
+          0.6,
+          0.6
+        ],
+        "support": "wall"
+      },
+      {
+        "id": "observed_0002",
+        "center": [
+          0.67,
+          -0.15,
+          4.5
+        ],
+        "size": [
+          0.05,
+          0.4,
+          0.4
+        ],
+        "support": "wall"
+      },
+      {
+        "id": "observed_0003",
+        "center": [
+          0.81,
+          -0.15,
+          4.3
+        ],
+        "size": [
+          0.05,
+          0.4,
+          0.4
+        ],
+        "support": "wall"
+      },
+      {
+        "id": "observed_0004",
+        "center": [
+          0.59,
+          0.58,
+          3.8
+        ],
+        "size": [
+          0.25,
+          0.3,
+          0.35
+        ],
+        "support": "observed_0000"
+      },
+      {
+        "id": "observed_0005",
+        "center": [
+          0.66,
+          0.58,
+          3.8
+        ],
+        "size": [
+          0.25,
+          0.3,
+          0.35
+        ],
+        "support": "observed_0000"
+      },
+      {
+        "id": "observed_0006",
+        "center": [
+          0.72,
+          0.56,
+          3.8
+        ],
+        "size": [
+          0.25,
+          0.3,
+          0.35
+        ],
+        "support": "observed_0000"
+      },
+      {
+        "id": "observed_0007",
+        "center": [
+          0.62,
+          0.55,
+          3.8
+        ],
+        "size": [
+          0.25,
+          0.3,
+          0.35
+        ],
+        "support": "observed_0000"
+      },
+      {
+        "id": "observed_0008",
+        "center": [
+          0.58,
+          -0.5,
+          3.5
+        ],
+        "size": [
+          0.05,
+          0.1,
+          0.1
+        ],
+        "support": "ceiling"
+      },
+      {
+        "id": "observed_0009",
+        "center": [
+          0.77,
+          -0.4,
+          3.3
+        ],
+        "size": [
+          0.05,
+          0.1,
+          0.1
+        ],
+        "support": "ceiling"
+      },
+      {
+        "id": "observed_0010",
+        "center": [
+          0.83,
+          0.56,
+          3.6
+        ],
+        "size": [
+          0.2,
+          0.15,
+          0.25
+        ],
+        "support": "observed_0012"
+      },
+      {
+        "id": "observed_0011",
+        "center": [
+          0.54,
+          0.54,
+          4.2
+        ],
+        "size": [
+          0.15,
+          0.15,
+          0.2
+        ],
+        "support": "free"
+      },
+      {
+        "id": "observed_0012",
+        "center": [
+          0.8,
+          0.7,
+          3.5
+        ],
+        "size": [
+          0.35,
+          0.45,
+          0.5
+        ],
+        "support": "floor"
+      },
+      {
+        "id": "observed_0013",
+        "center": [
+          0.4,
+          0.1,
+          4.8
+        ],
+        "size": [
+          0.05,
+          0.2,
+          0.6
+        ],
+        "support": "observed_0001"
+      },
+      {
+        "id": "observed_0014",
+        "center": [
+          0.8,
+          0.64,
+          3.6
+        ],
+        "size": [
+          0.05,
+          0.08,
+          0.05
+        ],
+        "support": "observed_0012"
+      },
+      {
+        "id": "observed_0015",
+        "center": [
+          0.8,
+          0.62,
+          3.6
+        ],
+        "size": [
+          0.05,
+          0.08,
+          0.05
+        ],
+        "support": "observed_0012"
+      },
+      {
+        "id": "observed_0016",
+        "center": [
+          0.75,
+          -0.45,
+          3.4
+        ],
+        "size": [
+          0.15,
+          0.15,
+          0.15
+        ],
+        "support": "ceiling"
+      },
+      {
+        "id": "add_0001",
+        "center": [
+          0.4,
+          0.45,
+          4.5
+        ],
+        "size": [
+          0.6,
+          0.6,
+          0.6
+        ],
+        "support": "floor"
+      },
+      {
+        "id": "add_0002",
+        "center": [
+          0.4,
+          0.1,
+          4.8
+        ],
+        "size": [
+          0.2,
+          0.3,
+          0.25
+        ],
+        "support": "observed_0001"
+      },
+      {
+        "id": "add_0003",
+        "center": [
+          0.8,
+          0.5,
+          4.5
+        ],
+        "size": [
+          0.6,
+          0.6,
+          0.8
+        ],
+        "support": "floor"
+      }
+    ]
+  },
+  "observed": [
+    {
+      "id": "observed_0000",
+      "category": "bed",
+      "description": "made bed with pillows",
+      "bbox_2d": [
+        0.413,
+        0.529,
+        0.784,
+        0.906
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0001",
+      "category": "window",
+      "description": "window with black frame",
+      "bbox_2d": [
+        0.408,
+        0.417,
+        0.489,
+        0.571
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0002",
+      "category": "picture",
+      "description": "black framed wall art",
+      "bbox_2d": [
+        0.612,
+        0.42,
+        0.677,
+        0.513
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0003",
+      "category": "picture",
+      "description": "black framed wall art",
+      "bbox_2d": [
+        0.687,
+        0.414,
+        0.772,
+        0.507
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0004",
+      "category": "cushion",
+      "description": "orange pillow on bed",
+      "bbox_2d": [
+        0.561,
+        0.579,
+        0.634,
+        0.664
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0005",
+      "category": "cushion",
+      "description": "dark brown pillow on bed",
+      "bbox_2d": [
+        0.621,
+        0.587,
+        0.678,
+        0.665
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0006",
+      "category": "cushion",
+      "description": "white pillow on bed",
+      "bbox_2d": [
+        0.651,
+        0.565,
+        0.746,
+        0.659
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0007",
+      "category": "cushion",
+      "description": "white pillow on bed",
+      "bbox_2d": [
+        0.576,
+        0.558,
+        0.662,
+        0.588
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0008",
+      "category": "lighting",
+      "description": "ceiling recessed light",
+      "bbox_2d": [
+        0.586,
+        0.099,
+        0.617,
+        0.124
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0009",
+      "category": "lighting",
+      "description": "ceiling recessed light",
+      "bbox_2d": [
+        0.762,
+        0.229,
+        0.788,
+        0.245
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0010",
+      "category": "lighting",
+      "description": "desk lamp on nightstand",
+      "bbox_2d": [
+        0.833,
+        0.561,
+        0.872,
+        0.666
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0011",
+      "category": "lighting",
+      "description": "desk lamp on nightstand",
+      "bbox_2d": [
+        0.543,
+        0.54,
+        0.562,
+        0.577
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0012",
+      "category": "chest_of_drawers",
+      "description": "wooden nightstand with shelves",
+      "bbox_2d": [
+        0.758,
+        0.652,
+        0.901,
+        0.811
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0013",
+      "category": "blinds",
+      "description": "black blinds on window",
+      "bbox_2d": [
+        0.408,
+        0.417,
+        0.49,
+        0.445
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0014",
+      "category": "objects",
+      "description": "small decorative object",
+      "bbox_2d": [
+        0.802,
+        0.636,
+        0.828,
+        0.672
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0015",
+      "category": "objects",
+      "description": "small decorative object",
+      "bbox_2d": [
+        0.792,
+        0.61,
+        0.825,
+        0.647
+      ],
+      "role": "observed"
+    },
+    {
+      "id": "observed_0016",
+      "category": "misc",
+      "description": "ventilation grille on ceiling",
+      "bbox_2d": [
+        0.654,
+        0.111,
+        0.822,
+        0.216
+      ],
+      "role": "observed"
+    }
+  ],
+  "scene": {
+    "room_type": "bedroom",
+    "objects": [
+      {
+        "id": "observed_0000",
+        "category": "bed",
+        "description": "made bed with pillows",
+        "bbox_2d": [
+          0.413,
+          0.529,
+          0.784,
+          0.906
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0001",
+        "category": "window",
+        "description": "window with black frame",
+        "bbox_2d": [
+          0.408,
+          0.417,
+          0.489,
+          0.571
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0002",
+        "category": "picture",
+        "description": "black framed wall art",
+        "bbox_2d": [
+          0.612,
+          0.42,
+          0.677,
+          0.513
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0003",
+        "category": "picture",
+        "description": "black framed wall art",
+        "bbox_2d": [
+          0.687,
+          0.414,
+          0.772,
+          0.507
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0004",
+        "category": "cushion",
+        "description": "orange pillow on bed",
+        "bbox_2d": [
+          0.561,
+          0.579,
+          0.634,
+          0.664
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0005",
+        "category": "cushion",
+        "description": "dark brown pillow on bed",
+        "bbox_2d": [
+          0.621,
+          0.587,
+          0.678,
+          0.665
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0006",
+        "category": "cushion",
+        "description": "white pillow on bed",
+        "bbox_2d": [
+          0.651,
+          0.565,
+          0.746,
+          0.659
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0007",
+        "category": "cushion",
+        "description": "white pillow on bed",
+        "bbox_2d": [
+          0.576,
+          0.558,
+          0.662,
+          0.588
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0008",
+        "category": "lighting",
+        "description": "ceiling recessed light",
+        "bbox_2d": [
+          0.586,
+          0.099,
+          0.617,
+          0.124
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0009",
+        "category": "lighting",
+        "description": "ceiling recessed light",
+        "bbox_2d": [
+          0.762,
+          0.229,
+          0.788,
+          0.245
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0010",
+        "category": "lighting",
+        "description": "desk lamp on nightstand",
+        "bbox_2d": [
+          0.833,
+          0.561,
+          0.872,
+          0.666
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0011",
+        "category": "lighting",
+        "description": "desk lamp on nightstand",
+        "bbox_2d": [
+          0.543,
+          0.54,
+          0.562,
+          0.577
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0012",
+        "category": "chest_of_drawers",
+        "description": "wooden nightstand with shelves",
+        "bbox_2d": [
+          0.758,
+          0.652,
+          0.901,
+          0.811
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0013",
+        "category": "blinds",
+        "description": "black blinds on window",
+        "bbox_2d": [
+          0.408,
+          0.417,
+          0.49,
+          0.445
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0014",
+        "category": "objects",
+        "description": "small decorative object",
+        "bbox_2d": [
+          0.802,
+          0.636,
+          0.828,
+          0.672
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0015",
+        "category": "objects",
+        "description": "small decorative object",
+        "bbox_2d": [
+          0.792,
+          0.61,
+          0.825,
+          0.647
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "observed_0016",
+        "category": "misc",
+        "description": "ventilation grille on ceiling",
+        "bbox_2d": [
+          0.654,
+          0.111,
+          0.822,
+          0.216
+        ],
+        "role": "observed"
+      },
+      {
+        "id": "add_0001",
+        "category": "chair",
+        "description": "small upholstered chair near window",
+        "role": "hypothesized",
+        "unseen_reason": "occluded",
+        "reason": "common bedroom layout with reading nook"
+      },
+      {
+        "id": "add_0002",
+        "category": "plant",
+        "description": "small potted plant on windowsill",
+        "role": "hypothesized",
+        "unseen_reason": "occluded",
+        "reason": "typical decor near window"
+      },
+      {
+        "id": "add_0003",
+        "category": "cabinet",
+        "description": "wooden dresser against far wall",
+        "role": "hypothesized",
+        "unseen_reason": "outside_fov",
+        "reason": "standard bedroom furniture placement"
+      }
+    ]
+  }
+}

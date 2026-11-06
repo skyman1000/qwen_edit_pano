@@ -1,0 +1,118 @@
+{
+  "started_utc": "2026-10-20T12:40:34.530514+00:00",
+  "config": {
+    "generated_dir": null,
+    "generated_manifest": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_edit_pano/audit/benchmark_val925_preflight/native_pilot8.jsonl",
+    "reference_dir": null,
+    "reference_manifest": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_edit_pano/audit/benchmark_val925_preflight/reference_pilot8.jsonl",
+    "reference_label": "CPU preflight only: existing eight paired samples, not full val925 evaluation",
+    "output": "/data-nfs/gpu1-2/u13529658780/DIT360/qwen_edit_pano/audit/benchmark_val925_preflight/native",
+    "metrics": [
+      "all"
+    ],
+    "device": "cuda:0",
+    "batch_size": 1,
+    "clip_model": "openai/clip-vit-base-patch16",
+    "clip_model_path": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/models--openai--clip-vit-base-patch16/snapshots/57c216476eefef5ab752ec549e440a49ae4ae5f3",
+    "qalign_model_path": "/data-nfs/gpu1-2/u13529658780/.cache/huggingface/hub/models--q-future--one-align/snapshots/dcc603b95aa0ebd82afa696d4a1e20d11fc80ddb",
+    "clip_crop_fraction": 0.125,
+    "face_size": 512,
+    "panfusion_root": "/data-nfs/gpu1-2/u13529658780/DIT360/benchmark_assets/PanFusion",
+    "faed_weights": "/data-nfs/gpu1-2/u13529658780/DIT360/benchmark_assets/weights/faed.ckpt",
+    "faed_height": 512,
+    "faed_preprocess": "pil-bicubic",
+    "faed_compare_preprocessing": false,
+    "places_weights": "/data-nfs/gpu1-2/u13529658780/DIT360/benchmark_assets/weights/resnet18_places365.pth.tar",
+    "places_arch": "resnet18",
+    "is_splits": 1,
+    "is_diagnostics": false,
+    "dry_run": true
+  },
+  "protocol": "independent implementation; NOT verified identical to DiT360 paper protocol",
+  "n_generated_images": 8,
+  "n_reference_images": 8,
+  "selected_metrics": [
+    "fid",
+    "fidclip",
+    "fidpole",
+    "fidequ",
+    "faed",
+    "is",
+    "cs",
+    "qaquality",
+    "qaaesthetic",
+    "brisque",
+    "niqe"
+  ],
+  "package_versions": {
+    "torch": "2.6.0",
+    "torchvision": "0.21.0",
+    "numpy": "2.5.2",
+    "scipy": "1.17.1",
+    "Pillow": "12.3.0",
+    "pytorch-fid": "0.3.0",
+    "torchmetrics": "1.7.1",
+    "torch-fidelity": null,
+    "transformers": "4.52.4",
+    "pyiqa": "0.1.15",
+    "py360convert": "1.0.4",
+    "opencv-python": "5.0.0.93",
+    "opencv-python-headless": "5.0.0.93"
+  },
+  "code_sha256": {
+    "__init__.py": "76d3b0f85d1f7325e6b1c0ba795f74a4face55f1da377bbdacdd7a2bce2207fc",
+    "audit_generated.py": "1b83b2db11c9c6ef99325c8585076113c3a0558aeca81dafcbc4f17a8c32a575",
+    "benchmark.py": "0778a75ffb105bc94ca04f32a5723df247b9988189b0748ef32b3df822c0605a",
+    "common.py": "4a33157aa544ceaf394b69824ee6506e51e023a77c14d33aef8382c26de15edd",
+    "compare_reports.py": "2438afbbf2dd46e808b3131133ecf0b8eac9c43d3dba7f438f5cdd7e85101752",
+    "evaluate.py": "26304276070b3169f85ebd54300e60924f80703047126f9c4fb42185982b8c41",
+    "metrics/__init__.py": "c8d2d8209e62a7aeb25c902bb8ca9919c78765bd5228dfe366f708ec88c14be7",
+    "metrics/clip_score.py": "825e994901b68282317dd34c0af31af6cf749d9d18e0a935bf507a86ed92bb5a",
+    "metrics/faed.py": "b482cbf3afc1be64a63f6efb4c1064ae56d4ab6399df9cda67fbccdd33d15b2a",
+    "metrics/fid.py": "5b0bdbac1e55e27d20db5a6a9286ef27f96ad30f5195dc6dbe84d453b128db7f",
+    "metrics/no_reference.py": "629190f9b4e5a19cb9fa109de0f3aafcabfc902a1d01bc99a99c450fbc440701",
+    "metrics/places_is.py": "bc1704f1609fab62d9386c09dc6c02ef6f126b877d6f29d5f11b4520b8a18199",
+    "metrics/qalign_local.py": "163c2cba2b2fdd24d3c0765cf3e439e3357b04acba48f4b63e462ddc0178b821",
+    "prepare_mp3d.py": "7e61d9a454f3c8fbffea1af256b04ba38cf769b98e979c8ded829c6661b121d9"
+  },
+  "warnings": [
+    "Small sample estimates can be unstable. This <1000 reminder is not a paper requirement; no samples are added, removed or blocked.",
+    "Metrics do not establish causal reasoning or correct 3D geometry; retain visual/global consistency checks."
+  ],
+  "results": {
+    "fid": {
+      "status": "ready"
+    },
+    "fidclip": {
+      "status": "ready"
+    },
+    "fidpole": {
+      "status": "ready"
+    },
+    "fidequ": {
+      "status": "ready"
+    },
+    "faed": {
+      "status": "ready"
+    },
+    "is": {
+      "status": "ready"
+    },
+    "cs": {
+      "status": "ready"
+    },
+    "qaquality": {
+      "status": "ready"
+    },
+    "qaaesthetic": {
+      "status": "ready"
+    },
+    "brisque": {
+      "status": "ready"
+    },
+    "niqe": {
+      "status": "ready"
+    }
+  },
+  "inputs_manifest_sha256": "e150e080d335e1db44ef9936e5d78285861942ed2cc757f2742d317b9da54a7d"
+}

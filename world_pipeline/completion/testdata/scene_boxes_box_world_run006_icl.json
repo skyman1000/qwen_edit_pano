@@ -1,0 +1,91 @@
+{
+  "room_type": "bedroom",
+  "scene_hypothesis": "A modern, minimally styled bedroom completed around its visible furniture and fixtures, with additions enhancing functionality and aesthetic balance while respecting the camera's 90-degree field of view.",
+  "additions": [
+    {
+      "id": "new_0000",
+      "category": "chair",
+      "center": [
+        1.85,
+        -0.45,
+        3.75
+      ],
+      "size": [
+        0.82,
+        0.98,
+        0.76
+      ],
+      "description": "modern wooden chair near window",
+      "reason": "Provides seating for reading or relaxing by the window, complementing the existing bed and nightstand setup.",
+      "unseen_reason": "outside_fov"
+    },
+    {
+      "id": "new_0001",
+      "category": "table",
+      "center": [
+        1.65,
+        -0.55,
+        3.85
+      ],
+      "size": [
+        0.68,
+        0.72,
+        0.75
+      ],
+      "description": "small side table beside chair",
+      "reason": "Supports a lamp or drink while seated in the chair, creating a cohesive reading nook.",
+      "unseen_reason": "outside_fov"
+    },
+    {
+      "id": "new_0002",
+      "category": "picture",
+      "center": [
+        2.0,
+        0.35,
+        3.95
+      ],
+      "size": [
+        0.48,
+        0.62,
+        0.58
+      ],
+      "description": "black framed wall art",
+      "reason": "Balances visual weight on the wall above the chair and table, mirroring the style of existing picture frames.",
+      "unseen_reason": "outside_fov"
+    },
+    {
+      "id": "new_0003",
+      "category": "cabinet",
+      "center": [
+        -0.8,
+        -0.25,
+        5.5
+      ],
+      "size": [
+        0.58,
+        1.36,
+        0.82
+      ],
+      "description": "slim wall-mounted cabinet",
+      "reason": "Adds storage without obstructing the view, placed to hold books or decorative items near the window.",
+      "unseen_reason": "outside_fov"
+    },
+    {
+      "id": "new_0004",
+      "category": "plant",
+      "center": [
+        -0.95,
+        0.45,
+        5.7
+      ],
+      "size": [
+        0.32,
+        0.75,
+        0.58
+      ],
+      "description": "small potted plant on windowsill",
+      "reason": "Enhances the room’s ambiance with natural elements, positioned where light is abundant.",
+      "unseen_reason": "outside_fov"
+    }
+  ]
+}

@@ -38,11 +38,23 @@ def write_rows(path, values):
     Path(path).write_text(''.join(json.dumps(v, ensure_ascii=False, allow_nan=False) + '\n' for v in values))
 
 
-def new_output(path):
-    path = Path(path).resolve()
+def validate_new_output(path):
+    """Check the creation policy without creating directories or loading a model."""
+    requested = Path(path)
+    path = requested.resolve()
     allowed = [ROOT / 'qwen_edit_pano/data', ROOT / 'qwen_edit_pano/outputs', ROOT / 'research/audits']
     if not any(path.is_relative_to(p) and path != p for p in allowed):
-        raise ValueError('Use a NEW directory below qwen_edit_pano/data, outputs, or research/audits')
+        raise ValueError(
+            f'Output {str(requested)!r} resolves to {path} (cwd={Path.cwd()}). '
+            'Use a NEW directory below qwen_edit_pano/data, qwen_edit_pano/outputs, '
+            'or research/audits; e.g. qwen_edit_pano/outputs/scene_program_val_living_run006_fixed')
+    if path.exists() or requested.is_symlink():
+        raise FileExistsError(f'Output already exists; choose a NEW directory: {path}')
+    return path
+
+
+def new_output(path):
+    path = validate_new_output(path)
     path.mkdir(parents=True, exist_ok=False)
     return path
 
